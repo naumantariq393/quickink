@@ -35,7 +35,7 @@ class MarketingService extends StatelessWidget {
                             fit: BoxFit.cover)),
                   ),
                   Container(
-                    width: Get.width,
+                    width: Get.width / 1.049,
                     child: ResponsiveTextFieldRow(
                         firstTextField: Container(
                           alignment: Responsive.isMobileContext(context)
@@ -90,7 +90,7 @@ class MarketingService extends StatelessWidget {
                                       ]),
                                 ),
                                 Text(
-                                  'The Marketing and advertising field has traveled a lot through different times and now have successfully landed in the global village era where everything has become digital and aroused on the web. We as an Digital agency having the specialty in digital media (Social Media Marketing) are always digging the most outstanding catalogs for your business to proliferate at every edge, from designing campaigns, formatting publicity paths to executing it over all the platforms of social media we devote ourselves completely to get the highest results.',
+                                  "Digital Agency are important players in the digital eco system because, thanks to their skills, they allow their clients to bring their web project to perfection. They thus share their skills with those who need them. When executed well, it reaches a target audience in an effective, measurable and cost-effective way.",
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -107,9 +107,30 @@ class MarketingService extends StatelessWidget {
                                           : 1.4,
                                       fontWeight: FontWeight.normal,
                                       decoration: TextDecoration.none),
-                                ).paddingOnly(top: 20, bottom: 15),
+                                ).paddingOnly(
+                                  top: 20,
+                                ),
                                 Text(
-                                  'Perfection is a lie but we like to turn it upside down. By paying attention to every detail, we feed products to grow digital and make the best of all existing platforms. We make it easy for you to manage outgoing and incoming internet communications. With our effective marketing strategy we help you start a business plan and build the best marketing strategy to simplify and integrate your work.',
+                                  "What Is a Digital Marketing Agency?",
+                                  style: TextStyle(
+                                      color: UIDataColors.blackColor,
+                                      fontSize: !Responsive.isMobileContext(
+                                              context)
+                                          ? Responsive.isTabletContext(context)
+                                              ? 17
+                                              : 20
+                                          : 17,
+                                      height: !Responsive.isMobileContext(
+                                              context)
+                                          ? Responsive.isTabletContext(context)
+                                              ? 1.4
+                                              : 1.6
+                                          : 1.4,
+                                      fontWeight: FontWeight.bold,
+                                      decoration: TextDecoration.none),
+                                ).paddingOnly(bottom: 20, top: 20),
+                                Text(
+                                  "Digital marketing agency is an online services platform where they offers different services; creation of content, a website or an e-commerce site, the digital agency specializes in online visibility and presence. Internet marketing agency takes care of promoting your brand by addressing the right target. ",
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -128,7 +149,26 @@ class MarketingService extends StatelessWidget {
                                       decoration: TextDecoration.none),
                                 ),
                                 Text(
-                                  'Trio Tec Digital experts can help you figure out ways to grow and hack the way to your digital success. Our experts carefully evaluate your digital presence to identify errors and suggest improvements.',
+                                  "Why Work With a Internet Marketing  Agency?",
+                                  style: TextStyle(
+                                      color: UIDataColors.blackColor,
+                                      fontSize: !Responsive.isMobileContext(
+                                              context)
+                                          ? Responsive.isTabletContext(context)
+                                              ? 17
+                                              : 20
+                                          : 17,
+                                      height: !Responsive.isMobileContext(
+                                              context)
+                                          ? Responsive.isTabletContext(context)
+                                              ? 1.4
+                                              : 1.6
+                                          : 1.4,
+                                      fontWeight: FontWeight.bold,
+                                      decoration: TextDecoration.none),
+                                ).paddingOnly(bottom: 20, top: 20),
+                                Text(
+                                  "Web Agency is an agency specializing in the design, development and management of your websites and  businesses . Agency  made up of several professionals with complementary skills such as web developers, graphic designers, project managers. They are all experts in their field and are able to intervene on all aspects of the creation of a business and its proper functioning.\n \n Digital communication is a way to promote the offer, the product and give it the visibility it deserves on all media computers, mobile phones, etc. Videos, editorial content, online advertising media, social networks Facebook, Linkedin, Instagram, and   web  opportunities are numerous and very profitable. \n \n Digital marketing, much closer to the sales team, works to supply the sales portfolio with Leads or qualified contacts. Addition of paid traffic, natural referencing, qualified emailing campaigns, social selling; the missions are focused on commercial performance for the company.",
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -147,7 +187,7 @@ class MarketingService extends StatelessWidget {
                                       decoration: TextDecoration.none),
                                 ).paddingOnly(top: 15, bottom: 50),
                                 Text(
-                                  'Trio Tec Digital is a complete Pakistan-based digital marketing firm driven by smart and creative and passionate people. We believe in the development of strong products, good clean design, and well-crafted content. And integrated strategies. From digital marketing to website development. Progress, we are more than just another institution. We are your next partner.',
+                                  "Our digital marketing agency does everything possible to obtain quantified results and quality commercial leads for your sales teams.",
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(

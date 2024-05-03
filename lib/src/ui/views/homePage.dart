@@ -34,10 +34,14 @@ class HomeScreen extends StatelessWidget {
                 color: UIDataColors.whiteColor,
                 child: Column(
                   children: [
-                   
                     Container(
                       width: Get.width,
-                      height: Get.height / 1.2,
+                      height: !Responsive.isMobileContext(context)
+                          ? Responsive.isTabletContext(context)
+                              ? Get.height / 1.5
+                              : Get.height / 1.2
+                          : Get.height / 2,
+                      // Get.height / 1.2,
                       alignment: Alignment.centerLeft,
                       decoration: BoxDecoration(
                           image: DecorationImage(
@@ -72,11 +76,18 @@ class HomeScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Trio Tec Digital",
+                                      "Quick Ink Marketing",
                                       style: TextStyle(
                                           color: Colors.white,
                                           decoration: TextDecoration.none,
-                                          fontSize: 38,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 26
+                                                  : 38
+                                              : 24,
+                                          // 38,
                                           fontFamily: 'Popins',
                                           letterSpacing: 1.5,
                                           fontWeight: FontWeight.bold),
@@ -87,7 +98,13 @@ class HomeScreen extends StatelessWidget {
                                           decoration: TextDecoration.none,
                                           fontFamily: 'Popins',
                                           color: UIDataColors.whiteColor,
-                                          fontSize: 17,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 11.5
+                                                  : 17
+                                              : 10,
                                           height: 1.5,
                                           wordSpacing: 1.5,
                                           letterSpacing: 1),
@@ -97,7 +114,11 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Container(
                                 // width: 500,
-                                height: 600,
+                                height: !Responsive.isMobileContext(context)
+                                    ? Responsive.isTabletContext(context)
+                                        ? 300
+                                        : 600
+                                    : 200,
                                 // color: Colors.black,
                                 child: Image.asset('images/home/tr.png'),
                               )
@@ -113,11 +134,18 @@ class HomeScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Trio Tec Digital",
+                                      "Quick Ink Marketing",
                                       style: TextStyle(
                                           color: Colors.white,
                                           decoration: TextDecoration.none,
-                                          fontSize: 38,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 26
+                                                  : 38
+                                              : 24,
+                                          // 38,
                                           fontFamily: 'Popins',
                                           letterSpacing: 1.5,
                                           fontWeight: FontWeight.bold),
@@ -128,7 +156,13 @@ class HomeScreen extends StatelessWidget {
                                           decoration: TextDecoration.none,
                                           fontFamily: 'Popins',
                                           color: UIDataColors.whiteColor,
-                                          fontSize: 17,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 11.5
+                                                  : 17
+                                              : 10,
                                           height: 1.5,
                                           wordSpacing: 1.5,
                                           letterSpacing: 1),
@@ -138,13 +172,17 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Container(
                                 // width: 500,
-                                height: 600,
+                                height: !Responsive.isMobileContext(context)
+                                    ? Responsive.isTabletContext(context)
+                                        ? 300
+                                        : 600
+                                    : 200,
                                 // color: Colors.black,
                                 child: Image.asset('images/home/tr2.png'),
                               )
                             ],
                           ),
-
+                          //
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
@@ -154,11 +192,18 @@ class HomeScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Trio Tec Digital",
+                                      "Quick Ink Marketing",
                                       style: TextStyle(
                                           color: Colors.white,
                                           decoration: TextDecoration.none,
-                                          fontSize: 38,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 26
+                                                  : 38
+                                              : 24,
+                                          // 38,
                                           fontFamily: 'Popins',
                                           letterSpacing: 1.5,
                                           fontWeight: FontWeight.bold),
@@ -169,7 +214,13 @@ class HomeScreen extends StatelessWidget {
                                           decoration: TextDecoration.none,
                                           fontFamily: 'Popins',
                                           color: UIDataColors.whiteColor,
-                                          fontSize: 17,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 11.5
+                                                  : 17
+                                              : 10,
                                           height: 1.5,
                                           wordSpacing: 1.5,
                                           letterSpacing: 1),
@@ -179,13 +230,17 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Container(
                                 // width: 500,
-                                height: 600,
+                                height: !Responsive.isMobileContext(context)
+                                    ? Responsive.isTabletContext(context)
+                                        ? 300
+                                        : 600
+                                    : 200,
                                 // color: Colors.black,
                                 child: Image.asset('images/home/tr3.png'),
                               )
                             ],
                           ),
-
+                          //
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
@@ -195,11 +250,18 @@ class HomeScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Trio Tec Digital",
+                                      "Quick Ink Marketing",
                                       style: TextStyle(
                                           color: Colors.white,
                                           decoration: TextDecoration.none,
-                                          fontSize: 38,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 26
+                                                  : 38
+                                              : 24,
+                                          // 38,
                                           fontFamily: 'Popins',
                                           letterSpacing: 1.5,
                                           fontWeight: FontWeight.bold),
@@ -210,7 +272,13 @@ class HomeScreen extends StatelessWidget {
                                           decoration: TextDecoration.none,
                                           fontFamily: 'Popins',
                                           color: UIDataColors.whiteColor,
-                                          fontSize: 17,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 11.5
+                                                  : 17
+                                              : 10,
                                           height: 1.5,
                                           wordSpacing: 1.5,
                                           letterSpacing: 1),
@@ -220,12 +288,17 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Container(
                                 // width: 500,
-                                height: 600,
+                                height: !Responsive.isMobileContext(context)
+                                    ? Responsive.isTabletContext(context)
+                                        ? 300
+                                        : 600
+                                    : 200,
                                 // color: Colors.black,
                                 child: Image.asset('images/home/tr4.png'),
                               )
                             ],
                           ),
+                          //
                         ],
                       ),
                     ),
@@ -360,8 +433,11 @@ class HomeScreen extends StatelessWidget {
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
-                          colors: [UIDataColors.blColor,  UIDataColors.cardColor,
-                                    UIDataColors.card2Color],
+                          colors: [
+                            UIDataColors.blColor,
+                            UIDataColors.cardColor,
+                            UIDataColors.card2Color
+                          ],
                         ),
                       ),
                       // color: UIDataColors.commonColor,
@@ -1693,7 +1769,7 @@ class HomeScreen extends StatelessWidget {
                           ? Get.width
                           : null,
                       decoration: BoxDecoration(
-                          color:UIDataColors.commonColor,
+                          color: UIDataColors.commonColor,
                           borderRadius: BorderRadius.circular(20)),
                       padding: EdgeInsets.all(20),
                       child: Obx(() => Responsive.isMobileContext(context)
@@ -1855,7 +1931,7 @@ class HomeScreen extends StatelessWidget {
                                 )
                               ],
                             )),
-                    ).marginSymmetric(vertical: 50,horizontal: 150),
+                    ).marginSymmetric(vertical: 50, horizontal: 150),
                     //Customer says
                     Container(
                       width: Get.width,

@@ -19,6 +19,7 @@ class ResponsiveTextFieldRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Responsive.isMobileContext(context) || forceSingleFieldInRow
         ? Column(
+          
             children: [
               firstTextField,
               SizedBox(
@@ -32,6 +33,7 @@ class ResponsiveTextFieldRow extends StatelessWidget {
             ],
           )
         : Row(
+          
             children: [
               Expanded(
                 child: firstTextField,

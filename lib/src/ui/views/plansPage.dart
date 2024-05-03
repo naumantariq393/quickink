@@ -229,7 +229,7 @@ class PlanScreen extends StatelessWidget {
                                                             child: ListView
                                                                 .builder(
                                                                     itemCount: _
-                                                                        .cardData
+                                                                        .webCardDataBasic
                                                                         .length,
                                                                     itemBuilder:
                                                                         (BuildContext
@@ -241,11 +241,11 @@ class PlanScreen extends StatelessWidget {
                                                                             children: [
                                                                               SizedBox(width: Get.height * 0.01),
                                                                               Icon(
-                                                                                _.cardData[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                                _.webCardDataBasic[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
                                                                                 size: 17,
                                                                               ),
                                                                               SizedBox(width: Get.width * 0.006),
-                                                                              Text(_.cardData[i]['offer']),
+                                                                              Text(_.webCardDataBasic[i]['offer']),
                                                                             ],
                                                                           ).marginSymmetric(
                                                                               vertical: 5),
@@ -286,7 +286,8 @@ class PlanScreen extends StatelessWidget {
                                                             child: Text(
                                                               'Get Now',
                                                               style: TextStyle(
-                                                                color: Colors.white,
+                                                                  color: Colors
+                                                                      .white,
                                                                   fontFamily:
                                                                       "Popins",
                                                                   fontSize: 16),
@@ -420,7 +421,7 @@ class PlanScreen extends StatelessWidget {
                                                             child: ListView
                                                                 .builder(
                                                                     itemCount: _
-                                                                        .cardData
+                                                                        .webCardDataStandard
                                                                         .length,
                                                                     itemBuilder:
                                                                         (BuildContext
@@ -432,11 +433,11 @@ class PlanScreen extends StatelessWidget {
                                                                             children: [
                                                                               SizedBox(width: Get.height * 0.01),
                                                                               Icon(
-                                                                                _.cardData[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                                _.webCardDataStandard[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
                                                                                 size: 17,
                                                                               ),
                                                                               SizedBox(width: Get.width * 0.006),
-                                                                              Text(_.cardData[i]['offer']),
+                                                                              Text(_.webCardDataStandard[i]['offer']),
                                                                             ],
                                                                           ).marginSymmetric(
                                                                               vertical: 5),
@@ -479,8 +480,8 @@ class PlanScreen extends StatelessWidget {
                                                               style: TextStyle(
                                                                   fontFamily:
                                                                       "Popins",
-                                                                color: Colors.white,
-
+                                                                  color: Colors
+                                                                      .white,
                                                                   fontSize: 16),
                                                             ),
                                                           ).marginSymmetric(
@@ -612,7 +613,7 @@ class PlanScreen extends StatelessWidget {
                                                             child: ListView
                                                                 .builder(
                                                                     itemCount: _
-                                                                        .cardData
+                                                                        .webCardDataPlatinium
                                                                         .length,
                                                                     itemBuilder:
                                                                         (BuildContext
@@ -624,11 +625,11 @@ class PlanScreen extends StatelessWidget {
                                                                             children: [
                                                                               SizedBox(width: Get.height * 0.01),
                                                                               Icon(
-                                                                                _.cardData[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                                _.webCardDataPlatinium[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
                                                                                 size: 17,
                                                                               ),
                                                                               SizedBox(width: Get.width * 0.006),
-                                                                              Text(_.cardData[i]['offer']),
+                                                                              Text(_.webCardDataPlatinium[i]['offer']),
                                                                             ],
                                                                           ).marginSymmetric(
                                                                               vertical: 5),
@@ -669,8 +670,8 @@ class PlanScreen extends StatelessWidget {
                                                             child: Text(
                                                               'Get Now',
                                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                                  color: Colors
+                                                                      .white,
                                                                   fontFamily:
                                                                       "Popins",
                                                                   fontSize: 16),
@@ -749,7 +750,7 @@ class PlanScreen extends StatelessWidget {
                                               child: SingleChildScrollView(
                                                 child: Column(children: [
                                                   Container(
-                                                    width: Get.width ,
+                                                    width: Get.width,
                                                     decoration: BoxDecoration(
                                                       color: Color.fromARGB(
                                                           255, 252, 252, 252),
@@ -770,7 +771,8 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                     // height: Get.height / 1.43,
                                                     alignment: Alignment.center,
-                                                    margin: EdgeInsets.all(16.0),
+                                                    margin:
+                                                        EdgeInsets.all(16.0),
                                                     child: Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
@@ -781,7 +783,8 @@ class PlanScreen extends StatelessWidget {
                                                       children: [
                                                         Container(
                                                           width: Get.width,
-                                                          height: Get.height / 13,
+                                                          height:
+                                                              Get.height / 13,
                                                           color: UIDataColors
                                                               .blueColor,
                                                           alignment:
@@ -794,8 +797,8 @@ class PlanScreen extends StatelessWidget {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
-                                                                color:
-                                                                    Colors.white,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins"),
                                                           ),
@@ -813,8 +816,8 @@ class PlanScreen extends StatelessWidget {
                                                               'Rs',
                                                               style: TextStyle(
                                                                 fontSize: 10.0,
-                                                                color:
-                                                                    Colors.black,
+                                                                color: Colors
+                                                                    .black,
                                                               ),
                                                             ),
                                                             Column(
@@ -824,12 +827,11 @@ class PlanScreen extends StatelessWidget {
                                                                   style: TextStyle(
                                                                       fontSize:
                                                                           29.0,
-                                                                      color: Color
-                                                                          .fromARGB(
-                                                                              176,
-                                                                              0,
-                                                                              0,
-                                                                              0),
+                                                                      color: Color.fromARGB(
+                                                                          176,
+                                                                          0,
+                                                                          0,
+                                                                          0),
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w900,
@@ -860,54 +862,46 @@ class PlanScreen extends StatelessWidget {
                                                               Get.height - 430,
                                                           width: Get.width,
                                                           // color: Colors.amber,
-                                                          child: ListView.builder(
-                                                              itemCount: _
-                                                                  .cardData
-                                                                  .length,
-                                                              itemBuilder:
-                                                                  (BuildContext
-                                                                          context,
-                                                                      i) {
-                                                                return Column(
-                                                                  children: [
-                                                                    Row(
+                                                          child:
+                                                              ListView.builder(
+                                                                  itemCount: _
+                                                                      .socialCardDataBasic
+                                                                      .length,
+                                                                  itemBuilder:
+                                                                      (BuildContext
+                                                                              context,
+                                                                          i) {
+                                                                    return Column(
                                                                       children: [
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.height * 0.01),
-                                                                        Icon(
-                                                                          _.cardData[i]['tick']
-                                                                              ? Icons.done_all_outlined
-                                                                              : Icons.cancel_outlined,
-                                                                          size:
+                                                                        Row(
+                                                                          children: [
+                                                                            SizedBox(width: Get.height * 0.01),
+                                                                            Icon(
+                                                                              _.socialCardDataBasic[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                              size: 17,
+                                                                            ),
+                                                                            SizedBox(width: Get.width * 0.006),
+                                                                            Text(_.socialCardDataBasic[i]['offer']),
+                                                                          ],
+                                                                        ).marginSymmetric(
+                                                                            vertical:
+                                                                                5),
+                                                                        Divider(
+                                                                          // thickness: 1,
+                                                                          color: const Color
+                                                                              .fromARGB(
+                                                                              142,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                          endIndent:
                                                                               17,
-                                                                        ),
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.width * 0.006),
-                                                                        Text(_.cardData[
-                                                                                i]
-                                                                            [
-                                                                            'offer']),
+                                                                          indent:
+                                                                              17,
+                                                                        )
                                                                       ],
-                                                                    ).marginSymmetric(
-                                                                        vertical:
-                                                                            5),
-                                                                    Divider(
-                                                                      // thickness: 1,
-                                                                      color: const Color
-                                                                          .fromARGB(
-                                                                          142,
-                                                                          0,
-                                                                          0,
-                                                                          0),
-                                                                      endIndent:
-                                                                          17,
-                                                                      indent: 17,
-                                                                    )
-                                                                  ],
-                                                                );
-                                                              }),
+                                                                    );
+                                                                  }),
                                                         ),
                                                         ElevatedButton(
                                                           onPressed: () {
@@ -927,8 +921,8 @@ class PlanScreen extends StatelessWidget {
                                                           child: Text(
                                                             'Get Now',
                                                             style: TextStyle(
-                                                                color: Colors.white,
-
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins",
                                                                 fontSize: 16),
@@ -939,7 +933,7 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                   ),
                                                   Container(
-                                                    width: Get.width ,
+                                                    width: Get.width,
                                                     decoration: BoxDecoration(
                                                       color: Color.fromARGB(
                                                           255, 252, 252, 252),
@@ -960,7 +954,8 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                     // height: Get.height / 1.43,
                                                     alignment: Alignment.center,
-                                                    margin: EdgeInsets.all(16.0),
+                                                    margin:
+                                                        EdgeInsets.all(16.0),
                                                     child: Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
@@ -971,7 +966,8 @@ class PlanScreen extends StatelessWidget {
                                                       children: [
                                                         Container(
                                                           width: Get.width,
-                                                          height: Get.height / 13,
+                                                          height:
+                                                              Get.height / 13,
                                                           color: UIDataColors
                                                               .blueColor,
                                                           alignment:
@@ -984,8 +980,8 @@ class PlanScreen extends StatelessWidget {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
-                                                                color:
-                                                                    Colors.white,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins"),
                                                           ),
@@ -1003,8 +999,8 @@ class PlanScreen extends StatelessWidget {
                                                               'Rs',
                                                               style: TextStyle(
                                                                 fontSize: 10.0,
-                                                                color:
-                                                                    Colors.black,
+                                                                color: Colors
+                                                                    .black,
                                                               ),
                                                             ),
                                                             Column(
@@ -1014,12 +1010,11 @@ class PlanScreen extends StatelessWidget {
                                                                   style: TextStyle(
                                                                       fontSize:
                                                                           29.0,
-                                                                      color: Color
-                                                                          .fromARGB(
-                                                                              176,
-                                                                              0,
-                                                                              0,
-                                                                              0),
+                                                                      color: Color.fromARGB(
+                                                                          176,
+                                                                          0,
+                                                                          0,
+                                                                          0),
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w900,
@@ -1050,54 +1045,46 @@ class PlanScreen extends StatelessWidget {
                                                               Get.height - 430,
                                                           width: Get.width,
                                                           // color: Colors.amber,
-                                                          child: ListView.builder(
-                                                              itemCount: _
-                                                                  .cardData
-                                                                  .length,
-                                                              itemBuilder:
-                                                                  (BuildContext
-                                                                          context,
-                                                                      i) {
-                                                                return Column(
-                                                                  children: [
-                                                                    Row(
+                                                          child:
+                                                              ListView.builder(
+                                                                  itemCount: _
+                                                                      .socialCardDataStandard
+                                                                      .length,
+                                                                  itemBuilder:
+                                                                      (BuildContext
+                                                                              context,
+                                                                          i) {
+                                                                    return Column(
                                                                       children: [
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.height * 0.01),
-                                                                        Icon(
-                                                                          _.cardData[i]['tick']
-                                                                              ? Icons.done_all_outlined
-                                                                              : Icons.cancel_outlined,
-                                                                          size:
+                                                                        Row(
+                                                                          children: [
+                                                                            SizedBox(width: Get.height * 0.01),
+                                                                            Icon(
+                                                                              _.socialCardDataStandard[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                              size: 17,
+                                                                            ),
+                                                                            SizedBox(width: Get.width * 0.006),
+                                                                            Text(_.socialCardDataStandard[i]['offer']),
+                                                                          ],
+                                                                        ).marginSymmetric(
+                                                                            vertical:
+                                                                                5),
+                                                                        Divider(
+                                                                          // thickness: 1,
+                                                                          color: const Color
+                                                                              .fromARGB(
+                                                                              142,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                          endIndent:
                                                                               17,
-                                                                        ),
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.width * 0.006),
-                                                                        Text(_.cardData[
-                                                                                i]
-                                                                            [
-                                                                            'offer']),
+                                                                          indent:
+                                                                              17,
+                                                                        )
                                                                       ],
-                                                                    ).marginSymmetric(
-                                                                        vertical:
-                                                                            5),
-                                                                    Divider(
-                                                                      // thickness: 1,
-                                                                      color: const Color
-                                                                          .fromARGB(
-                                                                          142,
-                                                                          0,
-                                                                          0,
-                                                                          0),
-                                                                      endIndent:
-                                                                          17,
-                                                                      indent: 17,
-                                                                    )
-                                                                  ],
-                                                                );
-                                                              }),
+                                                                    );
+                                                                  }),
                                                         ),
                                                         ElevatedButton(
                                                           onPressed: () {
@@ -1117,8 +1104,8 @@ class PlanScreen extends StatelessWidget {
                                                           child: Text(
                                                             'Get Now',
                                                             style: TextStyle(
-                                                                color: Colors.white,
-
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins",
                                                                 fontSize: 16),
@@ -1129,7 +1116,7 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                   ),
                                                   Container(
-                                                    width: Get.width ,
+                                                    width: Get.width,
                                                     decoration: BoxDecoration(
                                                       color: Color.fromARGB(
                                                           255, 252, 252, 252),
@@ -1150,7 +1137,8 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                     // height: Get.height / 1.43,
                                                     alignment: Alignment.center,
-                                                    margin: EdgeInsets.all(16.0),
+                                                    margin:
+                                                        EdgeInsets.all(16.0),
                                                     child: Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
@@ -1161,7 +1149,8 @@ class PlanScreen extends StatelessWidget {
                                                       children: [
                                                         Container(
                                                           width: Get.width,
-                                                          height: Get.height / 13,
+                                                          height:
+                                                              Get.height / 13,
                                                           color: UIDataColors
                                                               .blueColor,
                                                           alignment:
@@ -1174,8 +1163,8 @@ class PlanScreen extends StatelessWidget {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
-                                                                color:
-                                                                    Colors.white,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins"),
                                                           ),
@@ -1193,8 +1182,8 @@ class PlanScreen extends StatelessWidget {
                                                               'Rs',
                                                               style: TextStyle(
                                                                 fontSize: 10.0,
-                                                                color:
-                                                                    Colors.black,
+                                                                color: Colors
+                                                                    .black,
                                                               ),
                                                             ),
                                                             Column(
@@ -1204,12 +1193,11 @@ class PlanScreen extends StatelessWidget {
                                                                   style: TextStyle(
                                                                       fontSize:
                                                                           29.0,
-                                                                      color: Color
-                                                                          .fromARGB(
-                                                                              176,
-                                                                              0,
-                                                                              0,
-                                                                              0),
+                                                                      color: Color.fromARGB(
+                                                                          176,
+                                                                          0,
+                                                                          0,
+                                                                          0),
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w900,
@@ -1240,54 +1228,46 @@ class PlanScreen extends StatelessWidget {
                                                               Get.height - 430,
                                                           width: Get.width,
                                                           // color: Colors.amber,
-                                                          child: ListView.builder(
-                                                              itemCount: _
-                                                                  .cardData
-                                                                  .length,
-                                                              itemBuilder:
-                                                                  (BuildContext
-                                                                          context,
-                                                                      i) {
-                                                                return Column(
-                                                                  children: [
-                                                                    Row(
+                                                          child:
+                                                              ListView.builder(
+                                                                  itemCount: _
+                                                                      .socialCardDataPlatinium
+                                                                      .length,
+                                                                  itemBuilder:
+                                                                      (BuildContext
+                                                                              context,
+                                                                          i) {
+                                                                    return Column(
                                                                       children: [
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.height * 0.01),
-                                                                        Icon(
-                                                                          _.cardData[i]['tick']
-                                                                              ? Icons.done_all_outlined
-                                                                              : Icons.cancel_outlined,
-                                                                          size:
+                                                                        Row(
+                                                                          children: [
+                                                                            SizedBox(width: Get.height * 0.01),
+                                                                            Icon(
+                                                                              _.socialCardDataPlatinium[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                              size: 17,
+                                                                            ),
+                                                                            SizedBox(width: Get.width * 0.006),
+                                                                            Text(_.socialCardDataPlatinium[i]['offer']),
+                                                                          ],
+                                                                        ).marginSymmetric(
+                                                                            vertical:
+                                                                                5),
+                                                                        Divider(
+                                                                          // thickness: 1,
+                                                                          color: const Color
+                                                                              .fromARGB(
+                                                                              142,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                          endIndent:
                                                                               17,
-                                                                        ),
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.width * 0.006),
-                                                                        Text(_.cardData[
-                                                                                i]
-                                                                            [
-                                                                            'offer']),
+                                                                          indent:
+                                                                              17,
+                                                                        )
                                                                       ],
-                                                                    ).marginSymmetric(
-                                                                        vertical:
-                                                                            5),
-                                                                    Divider(
-                                                                      // thickness: 1,
-                                                                      color: const Color
-                                                                          .fromARGB(
-                                                                          142,
-                                                                          0,
-                                                                          0,
-                                                                          0),
-                                                                      endIndent:
-                                                                          17,
-                                                                      indent: 17,
-                                                                    )
-                                                                  ],
-                                                                );
-                                                              }),
+                                                                    );
+                                                                  }),
                                                         ),
                                                         ElevatedButton(
                                                           onPressed: () {
@@ -1307,8 +1287,8 @@ class PlanScreen extends StatelessWidget {
                                                           child: Text(
                                                             'Get Now',
                                                             style: TextStyle(
-                                                                color: Colors.white,
-
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins",
                                                                 fontSize: 16),
@@ -1332,20 +1312,19 @@ class PlanScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 InkWell(
-
-                                    onTap: () {
+                                  onTap: () {
                                     _.photography.toggle();
                                   },
-                                  
                                   child: Column(
                                     children: [
                                       Container(
                                         height: 70,
-                                        width: Responsive.isMobileContext(context)
-                                            ? Get.width / 1.3
-                                            : Get.width / 1.6,
-                                        color:
-                                            const Color.fromARGB(255, 213, 213, 213),
+                                        width:
+                                            Responsive.isMobileContext(context)
+                                                ? Get.width / 1.3
+                                                : Get.width / 1.6,
+                                        color: const Color.fromARGB(
+                                            255, 213, 213, 213),
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
@@ -1363,7 +1342,8 @@ class PlanScreen extends StatelessWidget {
                                                           187, 0, 0, 0),
                                                       fontSize: 20,
                                                       fontFamily: 'Popins',
-                                                      fontWeight: FontWeight.w700),
+                                                      fontWeight:
+                                                          FontWeight.w700),
                                                 ).marginOnly(left: 5),
                                               ],
                                             ),
@@ -1379,14 +1359,14 @@ class PlanScreen extends StatelessWidget {
                                           ],
                                         ).paddingOnly(right: 10, left: 20),
                                       ),
-                                        Obx(() => _.photography.value
+                                      Obx(() => _.photography.value
                                           ? Container(
                                               height: 500,
                                               width: Get.width / 2,
                                               child: SingleChildScrollView(
                                                 child: Column(children: [
                                                   Container(
-                                                    width: Get.width ,
+                                                    width: Get.width,
                                                     decoration: BoxDecoration(
                                                       color: Color.fromARGB(
                                                           255, 252, 252, 252),
@@ -1407,7 +1387,8 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                     // height: Get.height / 1.43,
                                                     alignment: Alignment.center,
-                                                    margin: EdgeInsets.all(16.0),
+                                                    margin:
+                                                        EdgeInsets.all(16.0),
                                                     child: Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
@@ -1418,7 +1399,8 @@ class PlanScreen extends StatelessWidget {
                                                       children: [
                                                         Container(
                                                           width: Get.width,
-                                                          height: Get.height / 13,
+                                                          height:
+                                                              Get.height / 13,
                                                           color: UIDataColors
                                                               .blueColor,
                                                           alignment:
@@ -1431,8 +1413,8 @@ class PlanScreen extends StatelessWidget {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
-                                                                color:
-                                                                    Colors.white,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins"),
                                                           ),
@@ -1450,8 +1432,8 @@ class PlanScreen extends StatelessWidget {
                                                               'Rs',
                                                               style: TextStyle(
                                                                 fontSize: 10.0,
-                                                                color:
-                                                                    Colors.black,
+                                                                color: Colors
+                                                                    .black,
                                                               ),
                                                             ),
                                                             Column(
@@ -1461,12 +1443,11 @@ class PlanScreen extends StatelessWidget {
                                                                   style: TextStyle(
                                                                       fontSize:
                                                                           29.0,
-                                                                      color: Color
-                                                                          .fromARGB(
-                                                                              176,
-                                                                              0,
-                                                                              0,
-                                                                              0),
+                                                                      color: Color.fromARGB(
+                                                                          176,
+                                                                          0,
+                                                                          0,
+                                                                          0),
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w900,
@@ -1497,54 +1478,46 @@ class PlanScreen extends StatelessWidget {
                                                               Get.height - 430,
                                                           width: Get.width,
                                                           // color: Colors.amber,
-                                                          child: ListView.builder(
-                                                              itemCount: _
-                                                                  .cardData
-                                                                  .length,
-                                                              itemBuilder:
-                                                                  (BuildContext
-                                                                          context,
-                                                                      i) {
-                                                                return Column(
-                                                                  children: [
-                                                                    Row(
+                                                          child:
+                                                              ListView.builder(
+                                                                  itemCount: _
+                                                                      .productCardDataBasic
+                                                                      .length,
+                                                                  itemBuilder:
+                                                                      (BuildContext
+                                                                              context,
+                                                                          i) {
+                                                                    return Column(
                                                                       children: [
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.height * 0.01),
-                                                                        Icon(
-                                                                          _.cardData[i]['tick']
-                                                                              ? Icons.done_all_outlined
-                                                                              : Icons.cancel_outlined,
-                                                                          size:
+                                                                        Row(
+                                                                          children: [
+                                                                            SizedBox(width: Get.height * 0.01),
+                                                                            Icon(
+                                                                              _.productCardDataBasic[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                              size: 17,
+                                                                            ),
+                                                                            SizedBox(width: Get.width * 0.006),
+                                                                            Text(_.productCardDataBasic[i]['offer']),
+                                                                          ],
+                                                                        ).marginSymmetric(
+                                                                            vertical:
+                                                                                5),
+                                                                        Divider(
+                                                                          // thickness: 1,
+                                                                          color: const Color
+                                                                              .fromARGB(
+                                                                              142,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                          endIndent:
                                                                               17,
-                                                                        ),
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.width * 0.006),
-                                                                        Text(_.cardData[
-                                                                                i]
-                                                                            [
-                                                                            'offer']),
+                                                                          indent:
+                                                                              17,
+                                                                        )
                                                                       ],
-                                                                    ).marginSymmetric(
-                                                                        vertical:
-                                                                            5),
-                                                                    Divider(
-                                                                      // thickness: 1,
-                                                                      color: const Color
-                                                                          .fromARGB(
-                                                                          142,
-                                                                          0,
-                                                                          0,
-                                                                          0),
-                                                                      endIndent:
-                                                                          17,
-                                                                      indent: 17,
-                                                                    )
-                                                                  ],
-                                                                );
-                                                              }),
+                                                                    );
+                                                                  }),
                                                         ),
                                                         ElevatedButton(
                                                           onPressed: () {
@@ -1564,8 +1537,8 @@ class PlanScreen extends StatelessWidget {
                                                           child: Text(
                                                             'Get Now',
                                                             style: TextStyle(
-                                                                color: Colors.white,
-
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins",
                                                                 fontSize: 16),
@@ -1576,7 +1549,7 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                   ),
                                                   Container(
-                                                    width: Get.width ,
+                                                    width: Get.width,
                                                     decoration: BoxDecoration(
                                                       color: Color.fromARGB(
                                                           255, 252, 252, 252),
@@ -1597,7 +1570,8 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                     // height: Get.height / 1.43,
                                                     alignment: Alignment.center,
-                                                    margin: EdgeInsets.all(16.0),
+                                                    margin:
+                                                        EdgeInsets.all(16.0),
                                                     child: Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
@@ -1608,7 +1582,8 @@ class PlanScreen extends StatelessWidget {
                                                       children: [
                                                         Container(
                                                           width: Get.width,
-                                                          height: Get.height / 13,
+                                                          height:
+                                                              Get.height / 13,
                                                           color: UIDataColors
                                                               .blueColor,
                                                           alignment:
@@ -1621,8 +1596,8 @@ class PlanScreen extends StatelessWidget {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
-                                                                color:
-                                                                    Colors.white,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins"),
                                                           ),
@@ -1640,8 +1615,8 @@ class PlanScreen extends StatelessWidget {
                                                               'Rs',
                                                               style: TextStyle(
                                                                 fontSize: 10.0,
-                                                                color:
-                                                                    Colors.black,
+                                                                color: Colors
+                                                                    .black,
                                                               ),
                                                             ),
                                                             Column(
@@ -1651,12 +1626,11 @@ class PlanScreen extends StatelessWidget {
                                                                   style: TextStyle(
                                                                       fontSize:
                                                                           29.0,
-                                                                      color: Color
-                                                                          .fromARGB(
-                                                                              176,
-                                                                              0,
-                                                                              0,
-                                                                              0),
+                                                                      color: Color.fromARGB(
+                                                                          176,
+                                                                          0,
+                                                                          0,
+                                                                          0),
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w900,
@@ -1687,54 +1661,46 @@ class PlanScreen extends StatelessWidget {
                                                               Get.height - 430,
                                                           width: Get.width,
                                                           // color: Colors.amber,
-                                                          child: ListView.builder(
-                                                              itemCount: _
-                                                                  .cardData
-                                                                  .length,
-                                                              itemBuilder:
-                                                                  (BuildContext
-                                                                          context,
-                                                                      i) {
-                                                                return Column(
-                                                                  children: [
-                                                                    Row(
+                                                          child:
+                                                              ListView.builder(
+                                                                  itemCount: _
+                                                                      .productCardDataStandard
+                                                                      .length,
+                                                                  itemBuilder:
+                                                                      (BuildContext
+                                                                              context,
+                                                                          i) {
+                                                                    return Column(
                                                                       children: [
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.height * 0.01),
-                                                                        Icon(
-                                                                          _.cardData[i]['tick']
-                                                                              ? Icons.done_all_outlined
-                                                                              : Icons.cancel_outlined,
-                                                                          size:
+                                                                        Row(
+                                                                          children: [
+                                                                            SizedBox(width: Get.height * 0.01),
+                                                                            Icon(
+                                                                              _.productCardDataStandard[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                              size: 17,
+                                                                            ),
+                                                                            SizedBox(width: Get.width * 0.006),
+                                                                            Text(_.productCardDataStandard[i]['offer']),
+                                                                          ],
+                                                                        ).marginSymmetric(
+                                                                            vertical:
+                                                                                5),
+                                                                        Divider(
+                                                                          // thickness: 1,
+                                                                          color: const Color
+                                                                              .fromARGB(
+                                                                              142,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                          endIndent:
                                                                               17,
-                                                                        ),
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.width * 0.006),
-                                                                        Text(_.cardData[
-                                                                                i]
-                                                                            [
-                                                                            'offer']),
+                                                                          indent:
+                                                                              17,
+                                                                        )
                                                                       ],
-                                                                    ).marginSymmetric(
-                                                                        vertical:
-                                                                            5),
-                                                                    Divider(
-                                                                      // thickness: 1,
-                                                                      color: const Color
-                                                                          .fromARGB(
-                                                                          142,
-                                                                          0,
-                                                                          0,
-                                                                          0),
-                                                                      endIndent:
-                                                                          17,
-                                                                      indent: 17,
-                                                                    )
-                                                                  ],
-                                                                );
-                                                              }),
+                                                                    );
+                                                                  }),
                                                         ),
                                                         ElevatedButton(
                                                           onPressed: () {
@@ -1754,8 +1720,8 @@ class PlanScreen extends StatelessWidget {
                                                           child: Text(
                                                             'Get Now',
                                                             style: TextStyle(
-                                                                color: Colors.white,
-
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins",
                                                                 fontSize: 16),
@@ -1766,7 +1732,7 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                   ),
                                                   Container(
-                                                    width: Get.width ,
+                                                    width: Get.width,
                                                     decoration: BoxDecoration(
                                                       color: Color.fromARGB(
                                                           255, 252, 252, 252),
@@ -1787,7 +1753,8 @@ class PlanScreen extends StatelessWidget {
                                                     ),
                                                     // height: Get.height / 1.43,
                                                     alignment: Alignment.center,
-                                                    margin: EdgeInsets.all(16.0),
+                                                    margin:
+                                                        EdgeInsets.all(16.0),
                                                     child: Column(
                                                       mainAxisAlignment:
                                                           MainAxisAlignment
@@ -1798,8 +1765,10 @@ class PlanScreen extends StatelessWidget {
                                                       children: [
                                                         Container(
                                                           width: Get.width,
-                                                          height: Get.height / 13,
-                                                          color: UIDataColors.commonColor,
+                                                          height:
+                                                              Get.height / 13,
+                                                          color: UIDataColors
+                                                              .commonColor,
                                                           alignment:
                                                               Alignment.center,
                                                           child: Text(
@@ -1810,8 +1779,8 @@ class PlanScreen extends StatelessWidget {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
-                                                                color:
-                                                                    Colors.white,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins"),
                                                           ),
@@ -1829,8 +1798,8 @@ class PlanScreen extends StatelessWidget {
                                                               'Rs',
                                                               style: TextStyle(
                                                                 fontSize: 10.0,
-                                                                color:
-                                                                    Colors.black,
+                                                                color: Colors
+                                                                    .black,
                                                               ),
                                                             ),
                                                             Column(
@@ -1840,12 +1809,11 @@ class PlanScreen extends StatelessWidget {
                                                                   style: TextStyle(
                                                                       fontSize:
                                                                           29.0,
-                                                                      color: Color
-                                                                          .fromARGB(
-                                                                              176,
-                                                                              0,
-                                                                              0,
-                                                                              0),
+                                                                      color: Color.fromARGB(
+                                                                          176,
+                                                                          0,
+                                                                          0,
+                                                                          0),
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w900,
@@ -1876,54 +1844,46 @@ class PlanScreen extends StatelessWidget {
                                                               Get.height - 430,
                                                           width: Get.width,
                                                           // color: Colors.amber,
-                                                          child: ListView.builder(
-                                                              itemCount: _
-                                                                  .cardData
-                                                                  .length,
-                                                              itemBuilder:
-                                                                  (BuildContext
-                                                                          context,
-                                                                      i) {
-                                                                return Column(
-                                                                  children: [
-                                                                    Row(
+                                                          child:
+                                                              ListView.builder(
+                                                                  itemCount: _
+                                                                      .productCardDataPlatinium
+                                                                      .length,
+                                                                  itemBuilder:
+                                                                      (BuildContext
+                                                                              context,
+                                                                          i) {
+                                                                    return Column(
                                                                       children: [
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.height * 0.01),
-                                                                        Icon(
-                                                                          _.cardData[i]['tick']
-                                                                              ? Icons.done_all_outlined
-                                                                              : Icons.cancel_outlined,
-                                                                          size:
+                                                                        Row(
+                                                                          children: [
+                                                                            SizedBox(width: Get.height * 0.01),
+                                                                            Icon(
+                                                                              _.productCardDataPlatinium[i]['tick'] ? Icons.done_all_outlined : Icons.cancel_outlined,
+                                                                              size: 17,
+                                                                            ),
+                                                                            SizedBox(width: Get.width * 0.006),
+                                                                            Text(_.productCardDataPlatinium[i]['offer']),
+                                                                          ],
+                                                                        ).marginSymmetric(
+                                                                            vertical:
+                                                                                5),
+                                                                        Divider(
+                                                                          // thickness: 1,
+                                                                          color: const Color
+                                                                              .fromARGB(
+                                                                              142,
+                                                                              0,
+                                                                              0,
+                                                                              0),
+                                                                          endIndent:
                                                                               17,
-                                                                        ),
-                                                                        SizedBox(
-                                                                            width:
-                                                                                Get.width * 0.006),
-                                                                        Text(_.cardData[
-                                                                                i]
-                                                                            [
-                                                                            'offer']),
+                                                                          indent:
+                                                                              17,
+                                                                        )
                                                                       ],
-                                                                    ).marginSymmetric(
-                                                                        vertical:
-                                                                            5),
-                                                                    Divider(
-                                                                      // thickness: 1,
-                                                                      color: const Color
-                                                                          .fromARGB(
-                                                                          142,
-                                                                          0,
-                                                                          0,
-                                                                          0),
-                                                                      endIndent:
-                                                                          17,
-                                                                      indent: 17,
-                                                                    )
-                                                                  ],
-                                                                );
-                                                              }),
+                                                                    );
+                                                                  }),
                                                         ),
                                                         ElevatedButton(
                                                           onPressed: () {
@@ -1943,8 +1903,8 @@ class PlanScreen extends StatelessWidget {
                                                           child: Text(
                                                             'Get Now',
                                                             style: TextStyle(
-                                                                color: Colors.white,
-
+                                                                color: Colors
+                                                                    .white,
                                                                 fontFamily:
                                                                     "Popins",
                                                                 fontSize: 16),
@@ -1996,7 +1956,7 @@ class PlanScreen extends StatelessWidget {
                                       width: Get.width / 30,
                                     ),
                                     Text(
-                                      "Social Media Marketing",
+                                      "Search Engine Optimization",
                                       style: TextStyle(
                                           // color: UIDataColors.secondaryOrangeColor,
                                           fontSize: Get.width * 0.015),
@@ -2120,7 +2080,8 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount:
+                                                    _.webCardDataBasic.length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -2132,8 +2093,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.webCardDataBasic[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -2143,8 +2104,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.webCardDataBasic[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -2173,15 +2135,13 @@ class PlanScreen extends StatelessWidget {
                                                   right: 35),
                                             ),
                                             child: Text(
-
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -2218,7 +2178,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Standard',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -2273,7 +2233,8 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .webCardDataStandard.length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -2285,8 +2246,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.webCardDataStandard[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -2296,8 +2257,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.webCardDataStandard[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -2328,12 +2290,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -2370,7 +2331,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Premium',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -2425,7 +2386,9 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .webCardDataPlatinium
+                                                    .length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -2437,8 +2400,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.webCardDataPlatinium[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -2448,8 +2411,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.webCardDataPlatinium[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -2480,12 +2444,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -2534,7 +2497,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Basic',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -2560,7 +2523,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '45,000',
                                                     style: TextStyle(
                                                         fontSize: 29.0,
                                                         color: Color.fromARGB(
@@ -2589,7 +2552,8 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .socialCardDataBasic.length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -2601,8 +2565,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.socialCardDataBasic[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -2612,8 +2576,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.socialCardDataBasic[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -2644,12 +2609,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -2686,7 +2650,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Standard',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -2712,7 +2676,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '75,000',
                                                     style: TextStyle(
                                                         fontSize: 29.0,
                                                         color: Color.fromARGB(
@@ -2741,7 +2705,9 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .socialCardDataStandard
+                                                    .length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -2753,8 +2719,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.socialCardDataStandard[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -2764,8 +2730,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.socialCardDataStandard[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -2796,12 +2763,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -2838,7 +2804,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Premium',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -2864,7 +2830,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '95,000',
                                                     style: TextStyle(
                                                         fontSize: 29.0,
                                                         color: Color.fromARGB(
@@ -2893,7 +2859,9 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .socialCardDataPlatinium
+                                                    .length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -2905,8 +2873,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.socialCardDataPlatinium[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -2916,8 +2884,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.socialCardDataPlatinium[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -2948,12 +2917,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -3003,7 +2971,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Basic',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -3029,7 +2997,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '45,000',
                                                     style: TextStyle(
                                                         fontSize: 29.0,
                                                         color: Color.fromARGB(
@@ -3058,7 +3026,9 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .productCardDataBasic
+                                                    .length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -3070,8 +3040,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.productCardDataBasic[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -3081,8 +3051,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.productCardDataBasic[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -3113,12 +3084,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -3155,7 +3125,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Standard',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -3181,7 +3151,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '85,000',
                                                     style: TextStyle(
                                                         fontSize: 29.0,
                                                         color: Color.fromARGB(
@@ -3210,7 +3180,9 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .productCardDataStandard
+                                                    .length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -3222,8 +3194,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.productCardDataStandard[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -3233,8 +3205,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.productCardDataStandard[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -3265,12 +3238,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),
@@ -3307,7 +3279,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'Premium',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28.0,
@@ -3333,7 +3305,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '120,000',
                                                     style: TextStyle(
                                                         fontSize: 29.0,
                                                         color: Color.fromARGB(
@@ -3362,7 +3334,9 @@ class PlanScreen extends StatelessWidget {
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
-                                                itemCount: _.cardData.length,
+                                                itemCount: _
+                                                    .productCardDataPlatinium
+                                                    .length,
                                                 itemBuilder:
                                                     (BuildContext context, i) {
                                                   return Column(
@@ -3374,8 +3348,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Get.height *
                                                                       0.01),
                                                           Icon(
-                                                            _.cardData[i]
-                                                                    ['tick']
+                                                            _.productCardDataPlatinium[
+                                                                    i]['tick']
                                                                 ? Icons
                                                                     .done_all_outlined
                                                                 : Icons
@@ -3385,8 +3359,9 @@ class PlanScreen extends StatelessWidget {
                                                           SizedBox(
                                                               width: Get.width *
                                                                   0.006),
-                                                          Text(_.cardData[i]
-                                                              ['offer']),
+                                                          Text(
+                                                              _.productCardDataPlatinium[
+                                                                  i]['offer']),
                                                         ],
                                                       ).marginSymmetric(
                                                           vertical: 5),
@@ -3417,12 +3392,11 @@ class PlanScreen extends StatelessWidget {
                                             child: Text(
                                               'Get Now',
                                               style: TextStyle(
-                                                                color: Colors.white,
-
+                                                  color: Colors.white,
                                                   fontFamily: "Popins",
                                                   fontSize: 16),
                                             ),
-                                          ).marginSymmetric(vertical: 20),
+                                          ).paddingOnly(bottom: 10),
                                         ],
                                       ),
                                     ),

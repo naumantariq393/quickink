@@ -20,24 +20,37 @@ class HoverWidget extends StatelessWidget {
                 hov.tryy.value = false;
               },
               child: AnimatedContainer(
-                duration: Duration(milliseconds: 400),
+                duration: Duration(milliseconds: 900),
                 width: Get.width,
+                padding: EdgeInsets.only(bottom: 20),
                 // margin: EdgeInsets.only(top: hov.containerHeight.value),
                 // height: Get.height / 2.5,
+                // decoration: BoxDecoration(
+                //   // border: Border(
+                //   //   top: BorderSide(
+                //   //     color: Color.fromRGBO(
+                //   //         223, 121, 110, 1), // Color of the bottom border
+                //   //     width: 15, // Width of the top border
+                //   //   ),
+                //   //   bottom: BorderSide(
+                //   //     color: Color.fromARGB(
+                //   //         255, 223, 121, 110), // Color of the bottom border
+                //   //     width: 15, // Width of the bottom border
+                //   //   ),
+                //   // ),
+                //   color: Color.fromARGB(255, 88, 75, 230),
+                // ),
                 decoration: BoxDecoration(
-                  border: Border(
-                    top: BorderSide(
-                      color: Color.fromRGBO(
-                          223, 121, 110, 1), // Color of the bottom border
-                      width: 15, // Width of the top border
-                    ),
-                    bottom: BorderSide(
-                      color: Color.fromARGB(
-                          255, 223, 121, 110), // Color of the bottom border
-                      width: 15, // Width of the bottom border
-                    ),
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: const [
+                      Color.fromARGB(255, 95, 15, 64),
+                      Color.fromARGB(255, 66, 37, 114)
+                    ],
+                    // Optional: Add stops for more control over the gradient distribution
+                    // stops: [0.0, 1.0],
                   ),
-                  color: Color.fromARGB(255, 88, 75, 230),
                 ),
                 child: Column(
                   children: [

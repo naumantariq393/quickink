@@ -38,52 +38,6 @@ class FooterWidget extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   decoration: TextDecoration.none))
                           .paddingSymmetric(vertical: 10),
-                      Text('Follow Us Here:',
-                              style: TextStyle(
-                                  color: UIDataColors.whiteColor,
-                                  fontSize: 25,
-                                  height: 1.6,
-                                  fontWeight: FontWeight.bold,
-                                  decoration: TextDecoration.none))
-                          .paddingOnly(bottom: 15),
-                      SizedBox(
-                        width: 180,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Icon(
-                              Icons.inbox,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                            Icon(
-                              Icons.indeterminate_check_box_sharp,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                            Icon(
-                              Icons.access_alarm,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                            Icon(
-                              Icons.inbox,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                            Icon(
-                              Icons.indeterminate_check_box_sharp,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                            Icon(
-                              Icons.access_alarm,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                          ],
-                        ),
-                      )
                     ],
                   ),
                 ).paddingOnly(left: 20),
@@ -329,6 +283,52 @@ class FooterWidget extends StatelessWidget {
                       //         .paddingOnly(bottom: 15),
                       //   ],
                       // ),
+                      Text('Follow Us Here:',
+                              style: TextStyle(
+                                  color: UIDataColors.whiteColor,
+                                  fontSize: 25,
+                                  height: 1.6,
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none))
+                          .paddingOnly(bottom: 15),
+                      SizedBox(
+                        width: 180,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(
+                              Icons.inbox,
+                              color: UIDataColors.whiteColor,
+                              size: 16,
+                            ),
+                            Icon(
+                              Icons.indeterminate_check_box_sharp,
+                              color: UIDataColors.whiteColor,
+                              size: 16,
+                            ),
+                            Icon(
+                              Icons.access_alarm,
+                              color: UIDataColors.whiteColor,
+                              size: 16,
+                            ),
+                            Icon(
+                              Icons.inbox,
+                              color: UIDataColors.whiteColor,
+                              size: 16,
+                            ),
+                            Icon(
+                              Icons.indeterminate_check_box_sharp,
+                              color: UIDataColors.whiteColor,
+                              size: 16,
+                            ),
+                            Icon(
+                              Icons.access_alarm,
+                              color: UIDataColors.whiteColor,
+                              size: 16,
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 )).paddingSymmetric(

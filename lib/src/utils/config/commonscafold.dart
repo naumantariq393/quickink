@@ -193,6 +193,7 @@ class CommonScafold extends StatelessWidget {
                     child: Obx(() => Text('Blogs',
                         style: TextStyle(
                             fontSize: 17,
+                            fontFamily: 'Popins',
                             color: _.check.value == 'Blogs'
                                 ? const Color.fromARGB(255, 255, 176, 0)
                                 : Colors.white)))),
@@ -254,7 +255,7 @@ class CommonScafold extends StatelessWidget {
                                 ),
                               ),
                               appbar(context),
-                              Image.asset(
+                              Image.asset( 
                                 "images/QIM-White-Text.png",
                                 height: 300,
                                 // width: 300,
@@ -263,9 +264,19 @@ class CommonScafold extends StatelessWidget {
                             ],
                           )
                         : AppBar(
+                          iconTheme: IconThemeData(color: Colors.white),
                             backgroundColor: Color.fromARGB(255, 88, 75, 230),
                             flexibleSpace: Container(
                               // width: Get.width,
+                               decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
+                                      colors:const [ Color.fromARGB(255, 95, 15, 64),  Color.fromARGB(255, 66, 37, 114)],
+                                      // Optional: Add stops for more control over the gradient distribution
+                                      // stops: [0.0, 1.0],
+                                    ),
+                                  ),
                               alignment: Alignment.center,
                               // color: Colors.green,
                               child: Image.asset(
@@ -280,6 +291,7 @@ class CommonScafold extends StatelessWidget {
               )
             : null,
         drawer: Drawer(
+          
           backgroundColor: Color.fromARGB(250, 55, 45, 170),
           // backgroundColor: UIDataColors.midBlackColor,
           child: ListView(
