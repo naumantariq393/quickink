@@ -3,6 +3,7 @@ import 'package:quickmarket/src/bindings/contactUs_bindings.dart';
 import 'package:quickmarket/src/bindings/plans_bindings.dart';
 import 'package:quickmarket/src/bindings/portfolioBinding.dart';
 import 'package:quickmarket/src/ui/views/aboutUs.dart';
+import 'package:quickmarket/src/ui/views/blogs.dart';
 import 'package:quickmarket/src/ui/views/contact.dart';
 import 'package:quickmarket/src/ui/views/portfolioPage.dart';
 import 'package:quickmarket/src/ui/views/service/appDevelopment.dart';
@@ -69,6 +70,12 @@ class AppPages {
         name: Routes.appdevelopment,
         binding: ServicesBindings(),
         page: () => AppDevelopment(),
+        transition: Transition.noTransition),
+
+            GetPage(
+        name: Routes.blogs,
+        // binding: ServicesBindings(),
+        page: () => Blogs(),
         transition: Transition.noTransition),
     GetPage(
         name: Routes.seoservice,

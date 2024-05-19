@@ -84,7 +84,7 @@ class VideoEditing extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Video Editing',
+                                              'What is a Video Editing Service?',
                                               style: TextStyle(
                                                   fontSize: !Responsive
                                                           .isMobileContext(
@@ -112,7 +112,7 @@ class VideoEditing extends StatelessWidget {
                                           ]),
                                     ),
                                     Text(
-                                      'Welcome to our professional video editing service, where creativity meets precision to transform your raw footage into captivating visual stories. Our dedicated team of skilled video editors is committed to delivering high-quality, polished videos that resonate with your audience and leave a lasting impression. Explore the comprehensive range of video editing services we offer to enhance your content and bring your vision to life.',
+                                      'The Video Editing Service offers, precisely, video editing to companies and individuals who wish to improve the quality of their videos. Our service is responsible for taking the recorded video and editing it to meet industry quality standards. Includes color correction, audio editing, text editing and much more.',
                                       style: TextStyle(
                                           color: UIDataColors.blackColor,
                                           fontSize: !Responsive.isMobileContext(
@@ -132,29 +132,50 @@ class VideoEditing extends StatelessWidget {
                                           fontWeight: FontWeight.normal,
                                           decoration: TextDecoration.none),
                                     ).paddingOnly(top: 0, bottom: 10),
-                                    Text(
-                                      'Our video editing team combines artistic flair with technical expertise to bring your creative vision to fruition. From storytelling to seamless transitions, color correction, and audio enhancement, we pay meticulous attention to detail to ensure your videos stand out in a crowded digital landscape.',
-                                      style: TextStyle(
-                                          color: UIDataColors.blackColor,
-                                          fontSize: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 14
-                                                  : 16
-                                              : 14,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 1.4
-                                                  : 1.6
-                                              : 1.4,
-                                          fontWeight: FontWeight.normal,
-                                          decoration: TextDecoration.none),
+
+                                    //
+                                    Container(
+                                      alignment:
+                                          Responsive.isMobileContext(context)
+                                              ? Alignment.center
+                                              : Alignment.topLeft,
+                                      width: Responsive.isMobileContext(context)
+                                          ? Get.width / 1.1
+                                          : Get.width / 2.5,
+                                      child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'Video Editing Services: How Can You Choose the Best One?',
+                                              style: TextStyle(
+                                                  fontSize: !Responsive
+                                                          .isMobileContext(
+                                                              context)
+                                                      ? Responsive
+                                                              .isTabletContext(
+                                                                  context)
+                                                          ? 30
+                                                          : 45
+                                                      : 30,
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      UIDataColors.blackColor,
+                                                  decoration:
+                                                      TextDecoration.none),
+                                            ),
+                                            Container(
+                                              width: Get.width / 6,
+                                              child: Divider(
+                                                thickness: 1,
+                                                height: 20,
+                                                color: UIDataColors.blackColor,
+                                              ),
+                                            )
+                                          ]),
                                     ),
                                     Text(
-                                      'Whether youre a content creator, business owner, or filmmaker, we offer tailored video editing solutions to meet the unique requirements of your project. From short-form social media content to feature-length films, we have the skills and resources to handle projects of any scale and complexity.',
+                                      'Today, word-era graphic photos still look like boring content. In todays world, creating video content is attractive for any business looking to stay current with the internet. For corporate and conventional video tutorials, videos are a powerful source for communicating your companys message to Internet users.',
                                       style: TextStyle(
                                           color: UIDataColors.blackColor,
                                           fontSize: !Responsive.isMobileContext(
@@ -173,239 +194,205 @@ class VideoEditing extends StatelessWidget {
                                               : 1.4,
                                           fontWeight: FontWeight.normal,
                                           decoration: TextDecoration.none),
-                                    ).paddingOnly(top: 10, bottom: 10),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Container(
+                                      alignment:
+                                          Responsive.isMobileContext(context)
+                                              ? Alignment.center
+                                              : Alignment.topLeft,
+                                      width: Responsive.isMobileContext(context)
+                                          ? Get.width / 1.1
+                                          : Get.width / 2.5,
+                                      child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'Why should you consider using a Video Editing Service?',
+                                              style: TextStyle(
+                                                  fontSize: !Responsive
+                                                          .isMobileContext(
+                                                              context)
+                                                      ? Responsive
+                                                              .isTabletContext(
+                                                                  context)
+                                                          ? 30
+                                                          : 45
+                                                      : 30,
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      UIDataColors.blackColor,
+                                                  decoration:
+                                                      TextDecoration.none),
+                                            ),
+                                            Container(
+                                              width: Get.width / 6,
+                                              child: Divider(
+                                                thickness: 1,
+                                                height: 20,
+                                                color: UIDataColors.blackColor,
+                                              ),
+                                            )
+                                          ]),
+                                    ),
+                                    Text(
+                                      'You choose a video editing service because you know the script or idea of how to make an idea into a sequence. Video production house knows the best way to script into a video, and it can help improve the quality of your videos.',
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      'Professional video editing can significantly improve the quality of your content, which in turn can help attract a wider audience and increase your online visibility.',
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      'Video editing is a time-consuming process t, and if you are inexperienced, it can be hard for you to get the best result. By hiring a professional video editing service, you can be sure your video will be ready in the shortest time possible without worrying about production costs.',
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Container(
+                                      alignment:
+                                          Responsive.isMobileContext(context)
+                                              ? Alignment.center
+                                              : Alignment.topLeft,
+                                      width: Responsive.isMobileContext(context)
+                                          ? Get.width / 1.1
+                                          : Get.width / 2.5,
+                                      child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'How do you select the best video editing services easily?',
+                                              style: TextStyle(
+                                                  fontSize: !Responsive
+                                                          .isMobileContext(
+                                                              context)
+                                                      ? Responsive
+                                                              .isTabletContext(
+                                                                  context)
+                                                          ? 30
+                                                          : 45
+                                                      : 30,
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      UIDataColors.blackColor,
+                                                  decoration:
+                                                      TextDecoration.none),
+                                            ),
+                                            Container(
+                                              width: Get.width / 6,
+                                              child: Divider(
+                                                thickness: 1,
+                                                height: 20,
+                                                color: UIDataColors.blackColor,
+                                              ),
+                                            )
+                                          ]),
+                                    ),
+                                    Text(
+                                      'When choosing a video editing service, there are several factors to consider. It is essential to verify the previous portfolio of their clients. This will give you an idea of ​​the quality you can expect from the service.',
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      'Lastly, it would help if you ensured the video editing service has an excellent online reputation. You can check it through the online reviews and comments from previous clients experiences.',
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
                                   ]),
                             ),
                           ))
+                      //fazi rec
                       .paddingOnly(
                           top: 50,
-                          bottom: Responsive.isMobileContext(context) ? 30 : 0),
-                  SizedBox(
-                    child: Text('Editing Services Offered',
-                        style: TextStyle(
-                            fontSize: !Responsive.isMobileContext(context)
-                                ? Responsive.isTabletContext(context)
-                                    ? 30
-                                    : 45
-                                : 30,
-                            fontWeight: FontWeight.bold,
-                            color: UIDataColors.blackColor,
-                            decoration: TextDecoration.none)),
-                  ),
-                  Container(
-                    width: Responsive.isMobileContext(context)
-                        ? Get.width / 1.1
-                        : Get.width / 1.2,
-                    child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          RichText(
-                              text: TextSpan(
-                                  text: 'Basic Editing: ',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none),
-                                  children: <TextSpan>[
-                                TextSpan(
-                                  text:
-                                      ' Trim, cut, and arrange footage for a cohesive narrative flow.',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.normal,
-                                      decoration: TextDecoration.none),
-                                )
-                              ])).paddingOnly(top: 40),
-                          RichText(
-                              text: TextSpan(
-                                  text: 'Advanced Editing: ',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none),
-                                  children: <TextSpan>[
-                                TextSpan(
-                                  text:
-                                      ' Incorporate advanced transitions, effects, and animations to add a dynamic touch to your videos.',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.normal,
-                                      decoration: TextDecoration.none),
-                                )
-                              ])).paddingOnly(top: 10),
-                          RichText(
-                              text: TextSpan(
-                                  text: 'Color Correction and Grading: ',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none),
-                                  children: <TextSpan>[
-                                TextSpan(
-                                  text:
-                                      ' Enhance visual appeal with color correction and grading for a polished and professional look.',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.normal,
-                                      decoration: TextDecoration.none),
-                                )
-                              ])).paddingOnly(top: 10),
-                          RichText(
-                              text: TextSpan(
-                                  text: 'Audio Enhancement: ',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none),
-                                  children: <TextSpan>[
-                                TextSpan(
-                                  text:
-                                      ' Ensure crystal-clear audio by eliminating background noise, adjusting levels, and adding sound effects or music.',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.normal,
-                                      decoration: TextDecoration.none),
-                                )
-                              ])).paddingOnly(top: 10),
-                          RichText(
-                              text: TextSpan(
-                                  text: 'Motion Graphics: ',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none),
-                                  children: <TextSpan>[
-                                TextSpan(
-                                  text:
-                                      ' Integrate eye-catching motion graphics to convey information and enhance visual interest.',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.normal,
-                                      decoration: TextDecoration.none),
-                                )
-                              ])).paddingOnly(top: 10, bottom: 60),
-                        ]),
-                  ),
+                          bottom:
+                              Responsive.isMobileContext(context) ? 30 : 60),
                   FooterWidget()
                 ],
               ),

@@ -12,4 +12,17 @@ class AboutUsController extends GetxController {
     globals.value = global;
     happys.value = happy;
   }
+
+  var a = [
+    {'name': 'images/product/p1.jpg'},
+    {'name': 'images/product/p2.jpg'},
+    {'name': 'images/product/p3.jpg'},
+    {'name': 'images/product/p4.jpg'},
+    {'name': 'images/product/p5.jpg'},
+    {'name': 'images/product/p6.jpg'},
+    {'name': 'images/product/p7.jpg'},
+    {'name': 'images/product/p8.jpg'},
+    {'name': 'images/product/p9.jpg'},
+    {'name': 'images/product/p10.jpg'},
+  ];
 }

@@ -190,13 +190,18 @@ class CommonScafold extends StatelessWidget {
                     onExit: (event) {
                       _.check.value = '';
                     },
-                    child: Obx(() => Text('Blogs',
-                        style: TextStyle(
-                            fontSize: 17,
-                            fontFamily: 'Popins',
-                            color: _.check.value == 'Blogs'
-                                ? const Color.fromARGB(255, 255, 176, 0)
-                                : Colors.white)))),
+                    child: Obx(() => InkWell(
+                      onTap: () {
+                         Get.toNamed(Routes.blogs);
+                      },
+                      child: Text('Blogs',
+                          style: TextStyle(
+                              fontSize: 17,
+                              fontFamily: 'Popins',
+                              color: _.check.value == 'Blogs'
+                                  ? const Color.fromARGB(255, 255, 176, 0)
+                                  : Colors.white)),
+                    ))),
                 MouseRegion(
                     onEnter: (event) {
                       _.check.value = 'Contact';
@@ -255,7 +260,7 @@ class CommonScafold extends StatelessWidget {
                                 ),
                               ),
                               appbar(context),
-                              Image.asset( 
+                              Image.asset(
                                 "images/QIM-White-Text.png",
                                 height: 300,
                                 // width: 300,

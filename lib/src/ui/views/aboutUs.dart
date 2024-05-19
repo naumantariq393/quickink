@@ -94,8 +94,10 @@ class AboutUs extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                         letterSpacing: 0),
                   ).marginOnly(top: 65),
+
                   Container(
                     height: 500,
+                    // color: Colors.red,
                     child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: !Responsive.isDesktopContext(context)
@@ -104,24 +106,24 @@ class AboutUs extends StatelessWidget {
                         crossAxisSpacing: 8.0, // Spacing between columns
                         mainAxisSpacing: 8.0, // Spacing between rows
                       ),
-                      itemCount: 10, // Number of items in the grid
+                      itemCount: _.a.length, // Number of items in the grid
                       itemBuilder: (BuildContext context, int index) {
                         return Container(
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               border: Border.all(color: Colors.grey)),
-                          // color: Colors.blueAccent,
-                          child: Text(
-                            'Item $index',
-                            style: TextStyle(color: Colors.white),
+                          child: Image.asset(
+                            '${_.a[index]['name']}',
+                            fit: BoxFit.contain,
                           ),
                         );
                       },
                     ),
                   ).marginOnly(top: 20),
-                  
+
                   Container(
-                    width: Responsive.isMobileContext(context)?Get.width:null,
+                    width:
+                        Responsive.isMobileContext(context) ? Get.width : null,
                     decoration: BoxDecoration(
                         color: UIDataColors.commonColor,
                         borderRadius: BorderRadius.circular(20)),
@@ -148,7 +150,9 @@ class AboutUs extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              SizedBox(height: 20,),
+                              SizedBox(
+                                height: 20,
+                              ),
                               Column(
                                 children: [
                                   AnimatedNumberText(
@@ -166,8 +170,9 @@ class AboutUs extends StatelessWidget {
                                       style: TextStyle(color: Colors.white))
                                 ],
                               ),
-                              SizedBox(height: 20,),
-
+                              SizedBox(
+                                height: 20,
+                              ),
                               Column(
                                 children: [
                                   AnimatedNumberText(
@@ -185,8 +190,9 @@ class AboutUs extends StatelessWidget {
                                       style: TextStyle(color: Colors.white))
                                 ],
                               ),
-                              SizedBox(height: 20,),
-
+                              SizedBox(
+                                height: 20,
+                              ),
                               Column(
                                 children: [
                                   AnimatedNumberText(

@@ -33,5 +33,6 @@ abstract class Routes {
   static const graphicdesign = '/graphicdesign';
   static const videoediting = '/videoediting';
   static const contactUs = '/contactus';
+  static const blogs = '/blogs';
 
 }

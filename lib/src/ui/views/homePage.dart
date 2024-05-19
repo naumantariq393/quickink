@@ -1966,6 +1966,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                             items: [
                               //
+
                               Container(
                                 width: !Responsive.isMobileContext(context)
                                     ? Responsive.isTabletContext(context)
@@ -1973,164 +1974,12 @@ class HomeScreen extends StatelessWidget {
                                         : Get.width / 4
                                     : Get.width,
                                 height: Get.height / 2.5,
-                                decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.2),
-                                      offset: Offset(2, 2),
-                                      blurRadius: 5,
-                                    ),
-                                  ],
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(5.0),
+                                // color: Colors.white,
+                                child: Image.asset(
+                                  'images/reviews/AbidHameedBBQTonight.png',
+                                  fit: BoxFit.cover,
                                 ),
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage(
-                                                  'images/home/m1.jpg'),
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Mattscoffham",
-                                              style: TextStyle(
-                                                fontSize: !Responsive
-                                                        .isMobileContext(
-                                                            context)
-                                                    ? Responsive
-                                                            .isTabletContext(
-                                                                context)
-                                                        ? 16
-                                                        : 10
-                                                    : 16,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: 'Popins',
-                                              ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                              ],
-                                            )
-                                          ],
-                                        ).marginOnly(left: 5),
-                                      ],
-                                    ),
-                                    Text(
-                                      "A good video of our holiday and for what I've paid for it's worth while anyone with limited resources spending money to get someone like Usman to edit for them. Thank you",
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 11
-                                                : 14,
-                                        fontFamily: 'Popins',
-                                        fontWeight: FontWeight.w500,
-                                        // color: UIDataColors.textColor,
-                                        wordSpacing: 2,
-                                      ),
-                                    ).paddingSymmetric(vertical: 10),
-                                  ],
-                                ).paddingSymmetric(horizontal: 20, vertical: 5),
-                              ).marginSymmetric(horizontal: 20),
-                              //
+                              ),
                               Container(
                                 width: !Responsive.isMobileContext(context)
                                     ? Responsive.isTabletContext(context)
@@ -2138,164 +1987,12 @@ class HomeScreen extends StatelessWidget {
                                         : Get.width / 4
                                     : Get.width,
                                 height: Get.height / 2.5,
-                                decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.2),
-                                      offset: Offset(2, 2),
-                                      blurRadius: 5,
-                                    ),
-                                  ],
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(5.0),
+                                // color: Colors.white,
+                                child: Image.asset(
+                                  'images/reviews/WaleedDayiMarketing.png',
+                                  fit: BoxFit.cover,
                                 ),
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage(
-                                                  'images/home/m2.jpg'),
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Mattscoffham",
-                                              style: TextStyle(
-                                                fontSize: !Responsive
-                                                        .isMobileContext(
-                                                            context)
-                                                    ? Responsive
-                                                            .isTabletContext(
-                                                                context)
-                                                        ? 16
-                                                        : 10
-                                                    : 16,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: 'Popins',
-                                              ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                              ],
-                                            )
-                                          ],
-                                        ).marginOnly(left: 5),
-                                      ],
-                                    ),
-                                    Text(
-                                      "He was a pleasure to work with and met all of my expectations! Very responsive! Will work with him again in the future for business needs. Thanks",
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 11
-                                                : 14,
-                                        fontFamily: 'Popins',
-                                        fontWeight: FontWeight.w500,
-                                        // color: UIDataColors.textColor,
-                                        wordSpacing: 2,
-                                      ),
-                                    ).paddingSymmetric(vertical: 10),
-                                  ],
-                                ).paddingSymmetric(horizontal: 20, vertical: 5),
-                              ).marginSymmetric(horizontal: 20),
-                              //
+                              ),
                               Container(
                                 width: !Responsive.isMobileContext(context)
                                     ? Responsive.isTabletContext(context)
@@ -2303,164 +2000,13 @@ class HomeScreen extends StatelessWidget {
                                         : Get.width / 4
                                     : Get.width,
                                 height: Get.height / 2.5,
-                                decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.2),
-                                      offset: Offset(2, 2),
-                                      blurRadius: 5,
-                                    ),
-                                  ],
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(5.0),
+                                // color: Colors.white,
+                                child: Image.asset(
+                                  'images/reviews/SafariEstate.png',
+                                  fit: BoxFit.cover,
                                 ),
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage(
-                                                  'images/home/m3.jpg'),
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Mattscoffham",
-                                              style: TextStyle(
-                                                fontSize: !Responsive
-                                                        .isMobileContext(
-                                                            context)
-                                                    ? Responsive
-                                                            .isTabletContext(
-                                                                context)
-                                                        ? 16
-                                                        : 10
-                                                    : 16,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: 'Popins',
-                                              ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                              ],
-                                            )
-                                          ],
-                                        ).marginOnly(left: 5),
-                                      ],
-                                    ),
-                                    Text(
-                                      "It went well, I might do it again",
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 11
-                                                : 14,
-                                        fontFamily: 'Popins',
-                                        fontWeight: FontWeight.w500,
-                                        // color: UIDataColors.textColor,
-                                        wordSpacing: 2,
-                                      ),
-                                    ).paddingSymmetric(vertical: 10),
-                                  ],
-                                ).paddingSymmetric(horizontal: 20, vertical: 5),
-                              ).marginSymmetric(horizontal: 20),
-                              //
+                              ),
+
                               Container(
                                 width: !Responsive.isMobileContext(context)
                                     ? Responsive.isTabletContext(context)
@@ -2468,164 +2014,13 @@ class HomeScreen extends StatelessWidget {
                                         : Get.width / 4
                                     : Get.width,
                                 height: Get.height / 2.5,
-                                decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.2),
-                                      offset: Offset(2, 2),
-                                      blurRadius: 5,
-                                    ),
-                                  ],
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(5.0),
+                                // color: Colors.white,
+                                child: Image.asset(
+                                  'images/reviews/KhanEstate.png',
+                                  fit: BoxFit.cover,
                                 ),
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage(
-                                                  'images/home/m4.jpg'),
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Mattscoffham",
-                                              style: TextStyle(
-                                                fontSize: !Responsive
-                                                        .isMobileContext(
-                                                            context)
-                                                    ? Responsive
-                                                            .isTabletContext(
-                                                                context)
-                                                        ? 16
-                                                        : 10
-                                                    : 16,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: 'Popins',
-                                              ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                              ],
-                                            )
-                                          ],
-                                        ).marginOnly(left: 5),
-                                      ],
-                                    ),
-                                    Text(
-                                      "Good communication skill and they are really patient and also listen proper to details. I will always recommend their services",
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 11
-                                                : 14,
-                                        fontFamily: 'Popins',
-                                        fontWeight: FontWeight.w500,
-                                        // color: UIDataColors.textColor,
-                                        wordSpacing: 2,
-                                      ),
-                                    ).paddingSymmetric(vertical: 10),
-                                  ],
-                                ).paddingSymmetric(horizontal: 20, vertical: 5),
-                              ).marginSymmetric(horizontal: 20),
-                              //
+                              ),
+
                               Container(
                                 width: !Responsive.isMobileContext(context)
                                     ? Responsive.isTabletContext(context)
@@ -2633,163 +2028,40 @@ class HomeScreen extends StatelessWidget {
                                         : Get.width / 4
                                     : Get.width,
                                 height: Get.height / 2.5,
-                                decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.2),
-                                      offset: Offset(2, 2),
-                                      blurRadius: 5,
-                                    ),
-                                  ],
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(5.0),
+                                // color: Colors.white,
+                                child: Image.asset(
+                                  'images/reviews/GlobalFotos.png',
+                                  fit: BoxFit.cover,
                                 ),
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 60
-                                                  : 40
-                                              : 60,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage(
-                                                  'images/home/m5.jpg'),
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Mattscoffham",
-                                              style: TextStyle(
-                                                fontSize: !Responsive
-                                                        .isMobileContext(
-                                                            context)
-                                                    ? Responsive
-                                                            .isTabletContext(
-                                                                context)
-                                                        ? 16
-                                                        : 10
-                                                    : 16,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: 'Popins',
-                                              ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 15
-                                                          : 13
-                                                      : 15,
-                                                ),
-                                              ],
-                                            )
-                                          ],
-                                        ).marginOnly(left: 5),
-                                      ],
-                                    ),
-                                    Text(
-                                      "Great work on my flyer. Creative and original.",
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 11
-                                                : 14,
-                                        fontFamily: 'Popins',
-                                        fontWeight: FontWeight.w500,
-                                        // color: UIDataColors.textColor,
-                                        wordSpacing: 2,
-                                      ),
-                                    ).paddingSymmetric(vertical: 10),
-                                  ],
-                                ).paddingSymmetric(horizontal: 20, vertical: 5),
-                              ).marginSymmetric(horizontal: 20),
+                              ),
+
+                              Container(
+                                width: !Responsive.isMobileContext(context)
+                                    ? Responsive.isTabletContext(context)
+                                        ? Get.width
+                                        : Get.width / 4
+                                    : Get.width,
+                                height: Get.height / 2.5,
+                                // color: Colors.white,
+                                child: Image.asset(
+                                  'images/reviews/DaisyDeveloper.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+
+                              Container(
+                                width: !Responsive.isMobileContext(context)
+                                    ? Responsive.isTabletContext(context)
+                                        ? Get.width
+                                        : Get.width / 4
+                                    : Get.width,
+                                height: Get.height / 2.5,
+                                // color: Colors.white,
+                                child: Image.asset(
+                                  'images/reviews/AurgzaibTulip.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ],
                           ).marginSymmetric(horizontal: Get.width * .20),
                         ],

@@ -66,7 +66,7 @@ class MarketingService extends StatelessWidget {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Digital Marketing',
+                                          'Digital Marketing Agency',
                                           style: TextStyle(
                                               fontSize: !Responsive
                                                       .isMobileContext(context)
@@ -313,34 +313,34 @@ class MarketingService extends StatelessWidget {
                                         fontWeight: FontWeight.bold,
                                         decoration: TextDecoration.none),
                                   ).paddingOnly(bottom: 15),
-                                  Text(
-                                    'Digital Marketing Plans',
-                                    style: TextStyle(
-                                        color: UIDataColors.blackColor,
-                                        fontWeight: FontWeight.normal,
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 16
-                                                : 14,
-                                        decoration: TextDecoration.none),
-                                  ).paddingOnly(top: 10),
-                                  Text(
-                                    'Retargeting, In-App Advertising + Geofencing',
-                                    style: TextStyle(
-                                        color: UIDataColors.blackColor,
-                                        fontWeight: FontWeight.normal,
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 16
-                                                : 14,
-                                        decoration: TextDecoration.none),
-                                  ).paddingOnly(top: 10),
+                                  // Text(
+                                  //   'Digital Marketing Plans',
+                                  //   style: TextStyle(
+                                  //       color: UIDataColors.blackColor,
+                                  //       fontWeight: FontWeight.normal,
+                                  //       fontSize:
+                                  //           !Responsive.isMobileContext(context)
+                                  //               ? Responsive.isTabletContext(
+                                  //                       context)
+                                  //                   ? 14
+                                  //                   : 16
+                                  //               : 14,
+                                  //       decoration: TextDecoration.none),
+                                  // ).paddingOnly(top: 10),
+                                  // Text(
+                                  //   'Retargeting, In-App Advertising + Geofencing',
+                                  //   style: TextStyle(
+                                  //       color: UIDataColors.blackColor,
+                                  //       fontWeight: FontWeight.normal,
+                                  //       fontSize:
+                                  //           !Responsive.isMobileContext(context)
+                                  //               ? Responsive.isTabletContext(
+                                  //                       context)
+                                  //                   ? 14
+                                  //                   : 16
+                                  //               : 14,
+                                  //       decoration: TextDecoration.none),
+                                  // ).paddingOnly(top: 10),
                                   Text(
                                     'Display Advertising',
                                     style: TextStyle(
@@ -423,20 +423,20 @@ class MarketingService extends StatelessWidget {
                                         fontWeight: FontWeight.bold,
                                         decoration: TextDecoration.none),
                                   ).paddingOnly(bottom: 15),
-                                  Text(
-                                    'Organic + Local SEO',
-                                    style: TextStyle(
-                                        color: UIDataColors.blackColor,
-                                        fontWeight: FontWeight.normal,
-                                        fontSize:
-                                            !Responsive.isMobileContext(context)
-                                                ? Responsive.isTabletContext(
-                                                        context)
-                                                    ? 14
-                                                    : 16
-                                                : 14,
-                                        decoration: TextDecoration.none),
-                                  ).paddingOnly(top: 10),
+                                  // Text(
+                                  //   'Organic + Local SEO',
+                                  //   style: TextStyle(
+                                  //       color: UIDataColors.blackColor,
+                                  //       fontWeight: FontWeight.normal,
+                                  //       fontSize:
+                                  //           !Responsive.isMobileContext(context)
+                                  //               ? Responsive.isTabletContext(
+                                  //                       context)
+                                  //                   ? 14
+                                  //                   : 16
+                                  //               : 14,
+                                  //       decoration: TextDecoration.none),
+                                  // ).paddingOnly(top: 10),
                                   Text(
                                     'SEO Consulting',
                                     style: TextStyle(
