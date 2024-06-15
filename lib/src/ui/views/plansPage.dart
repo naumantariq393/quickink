@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
@@ -34,7 +33,7 @@ class PlanScreen extends StatelessWidget {
                   Text(
                     "Our portfolio silhouettes our triumph in our niche. Take a look at our gratified clients for motivation or a round of applause.",
                     style: TextStyle(
-                        fontSize: 27.r,
+                        fontSize: 27,
                         fontWeight: FontWeight.w500,
                         fontFamily: "Popins"),
                     textAlign: TextAlign.center,
@@ -53,7 +52,7 @@ class PlanScreen extends StatelessWidget {
                                   child: Column(
                                     children: [
                                       Container(
-                                        height: 70.sh,
+                                        height: 70,
                                         width:
                                             Responsive.isMobileContext(context)
                                                 ? Get.width / 1.3
@@ -75,7 +74,7 @@ class PlanScreen extends StatelessWidget {
                                                   style: TextStyle(
                                                       color: Color.fromARGB(
                                                           187, 0, 0, 0),
-                                                      fontSize: 20.r,
+                                                      fontSize: 20,
                                                       fontFamily: 'Popins',
                                                       fontWeight:
                                                           FontWeight.w700),
@@ -85,18 +84,18 @@ class PlanScreen extends StatelessWidget {
                                             Container(
                                               // height: 20,
                                               // width: 20,
-                                              // color: Colors.red,
+                                              // color: Colorsed,
                                               child: Icon(
                                                 Icons.arrow_drop_down_rounded,
                                                 size: 50,
                                               ),
                                             )
                                           ],
-                                        ).paddingOnly(right: 10.r, left: 20.r),
+                                        ).paddingOnly(right: 10, left: 20),
                                       ),
                                       Obx(() => _.web.value
                                           ? Container(
-                                              height: 500.sh,
+                                              height: 500,
                                               width: Get.width / 2,
                                               child: SingleChildScrollView(
                                                 child: Column(
@@ -154,8 +153,7 @@ class PlanScreen extends StatelessWidget {
                                                               'Startup',
                                                               // textAlign: TextAlign.center,
                                                               style: TextStyle(
-                                                                  fontSize:
-                                                                      28.r,
+                                                                  fontSize: 28,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .bold,
@@ -178,8 +176,7 @@ class PlanScreen extends StatelessWidget {
                                                                 'Rs',
                                                                 style:
                                                                     TextStyle(
-                                                                  fontSize:
-                                                                      10.r,
+                                                                  fontSize: 10,
                                                                   color: Colors
                                                                       .black,
                                                                 ),
@@ -189,8 +186,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Text(
                                                                     '20000',
                                                                     style: TextStyle(
-                                                                        fontSize: 29
-                                                                            .r,
+                                                                        fontSize:
+                                                                            29,
                                                                         color: Color.fromARGB(
                                                                             176,
                                                                             0,
@@ -209,7 +206,7 @@ class PlanScreen extends StatelessWidget {
                                                                     style:
                                                                         TextStyle(
                                                                       fontSize:
-                                                                          16.r,
+                                                                          16,
                                                                       color: Colors
                                                                           .black,
                                                                     ),
@@ -290,8 +287,7 @@ class PlanScreen extends StatelessWidget {
                                                                       .white,
                                                                   fontFamily:
                                                                       "Popins",
-                                                                  fontSize:
-                                                                      16.r),
+                                                                  fontSize: 16),
                                                             ),
                                                           ).marginSymmetric(
                                                               vertical: 20),
@@ -348,8 +344,7 @@ class PlanScreen extends StatelessWidget {
                                                               'Startup',
                                                               // textAlign: TextAlign.center,
                                                               style: TextStyle(
-                                                                  fontSize:
-                                                                      28.r,
+                                                                  fontSize: 28,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .bold,
@@ -372,8 +367,7 @@ class PlanScreen extends StatelessWidget {
                                                                 'Rs',
                                                                 style:
                                                                     TextStyle(
-                                                                  fontSize:
-                                                                      10.r,
+                                                                  fontSize: 10,
                                                                   color: Colors
                                                                       .black,
                                                                 ),
@@ -383,8 +377,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Text(
                                                                     '20000',
                                                                     style: TextStyle(
-                                                                        fontSize: 29
-                                                                            .r,
+                                                                        fontSize:
+                                                                            29,
                                                                         color: Color.fromARGB(
                                                                             176,
                                                                             0,
@@ -403,7 +397,7 @@ class PlanScreen extends StatelessWidget {
                                                                     style:
                                                                         TextStyle(
                                                                       fontSize:
-                                                                          16.r,
+                                                                          16,
                                                                       color: Colors
                                                                           .black,
                                                                     ),
@@ -484,8 +478,7 @@ class PlanScreen extends StatelessWidget {
                                                                       "Popins",
                                                                   color: Colors
                                                                       .white,
-                                                                  fontSize:
-                                                                      16.r),
+                                                                  fontSize: 16),
                                                             ),
                                                           ).marginSymmetric(
                                                               vertical: 20),
@@ -542,8 +535,7 @@ class PlanScreen extends StatelessWidget {
                                                               'Startup',
                                                               // textAlign: TextAlign.center,
                                                               style: TextStyle(
-                                                                  fontSize:
-                                                                      28.r,
+                                                                  fontSize: 28,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .bold,
@@ -566,8 +558,7 @@ class PlanScreen extends StatelessWidget {
                                                                 'Rs',
                                                                 style:
                                                                     TextStyle(
-                                                                  fontSize:
-                                                                      10.r,
+                                                                  fontSize: 10,
                                                                   color: Colors
                                                                       .black,
                                                                 ),
@@ -577,8 +568,8 @@ class PlanScreen extends StatelessWidget {
                                                                   Text(
                                                                     '20000',
                                                                     style: TextStyle(
-                                                                        fontSize: 29
-                                                                            .r,
+                                                                        fontSize:
+                                                                            29,
                                                                         color: Color.fromARGB(
                                                                             176,
                                                                             0,
@@ -597,7 +588,7 @@ class PlanScreen extends StatelessWidget {
                                                                     style:
                                                                         TextStyle(
                                                                       fontSize:
-                                                                          16.r,
+                                                                          16,
                                                                       color: Colors
                                                                           .black,
                                                                     ),
@@ -678,8 +669,7 @@ class PlanScreen extends StatelessWidget {
                                                                       .white,
                                                                   fontFamily:
                                                                       "Popins",
-                                                                  fontSize:
-                                                                      16.r),
+                                                                  fontSize: 16),
                                                             ),
                                                           ).marginSymmetric(
                                                               vertical: 20),
@@ -729,7 +719,7 @@ class PlanScreen extends StatelessWidget {
                                                   style: TextStyle(
                                                       color: Color.fromARGB(
                                                           187, 0, 0, 0),
-                                                      fontSize: 20.r,
+                                                      fontSize: 20,
                                                       fontFamily: 'Popins',
                                                       fontWeight:
                                                           FontWeight.w700),
@@ -739,18 +729,18 @@ class PlanScreen extends StatelessWidget {
                                             Container(
                                               // height: 20,
                                               // width: 20,
-                                              // color: Colors.red,
+                                              // color: Colorsed,
                                               child: Icon(
                                                 Icons.arrow_drop_down_rounded,
                                                 size: 50,
                                               ),
                                             )
                                           ],
-                                        ).paddingOnly(right: 10.r, left: 20.r),
+                                        ).paddingOnly(right: 10, left: 20),
                                       ),
                                       Obx(() => _.social.value
                                           ? Container(
-                                              height: 500.sh,
+                                              height: 500,
                                               width: Get.width / 2,
                                               child: SingleChildScrollView(
                                                 child: Column(children: [
@@ -800,7 +790,7 @@ class PlanScreen extends StatelessWidget {
                                                             'Startup',
                                                             // textAlign: TextAlign.center,
                                                             style: TextStyle(
-                                                                fontSize: 28.r,
+                                                                fontSize: 28,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
@@ -822,7 +812,7 @@ class PlanScreen extends StatelessWidget {
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
-                                                                fontSize: 10.r,
+                                                                fontSize: 10,
                                                                 color: Colors
                                                                     .black,
                                                               ),
@@ -833,7 +823,7 @@ class PlanScreen extends StatelessWidget {
                                                                   '20000',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          29.r,
+                                                                          29,
                                                                       color: Color.fromARGB(
                                                                           176,
                                                                           0,
@@ -853,7 +843,7 @@ class PlanScreen extends StatelessWidget {
                                                                   style:
                                                                       TextStyle(
                                                                     fontSize:
-                                                                        16.r,
+                                                                        16,
                                                                     color: Colors
                                                                         .black,
                                                                   ),
@@ -932,7 +922,7 @@ class PlanScreen extends StatelessWidget {
                                                                     .white,
                                                                 fontFamily:
                                                                     "Popins",
-                                                                fontSize: 16.r),
+                                                                fontSize: 16),
                                                           ),
                                                         ).marginSymmetric(
                                                             vertical: 20),
@@ -985,7 +975,7 @@ class PlanScreen extends StatelessWidget {
                                                             'Startup',
                                                             // textAlign: TextAlign.center,
                                                             style: TextStyle(
-                                                                fontSize: 28.r,
+                                                                fontSize: 28,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
@@ -1007,7 +997,7 @@ class PlanScreen extends StatelessWidget {
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
-                                                                fontSize: 10.r,
+                                                                fontSize: 10,
                                                                 color: Colors
                                                                     .black,
                                                               ),
@@ -1018,7 +1008,7 @@ class PlanScreen extends StatelessWidget {
                                                                   '20000',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          29.r,
+                                                                          29,
                                                                       color: Color.fromARGB(
                                                                           176,
                                                                           0,
@@ -1038,7 +1028,7 @@ class PlanScreen extends StatelessWidget {
                                                                   style:
                                                                       TextStyle(
                                                                     fontSize:
-                                                                        16.r,
+                                                                        16,
                                                                     color: Colors
                                                                         .black,
                                                                   ),
@@ -1117,7 +1107,7 @@ class PlanScreen extends StatelessWidget {
                                                                     .white,
                                                                 fontFamily:
                                                                     "Popins",
-                                                                fontSize: 16.r),
+                                                                fontSize: 16),
                                                           ),
                                                         ).marginSymmetric(
                                                             vertical: 20),
@@ -1170,7 +1160,7 @@ class PlanScreen extends StatelessWidget {
                                                             'Startup',
                                                             // textAlign: TextAlign.center,
                                                             style: TextStyle(
-                                                                fontSize: 28.r,
+                                                                fontSize: 28,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
@@ -1192,7 +1182,7 @@ class PlanScreen extends StatelessWidget {
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
-                                                                fontSize: 10.r,
+                                                                fontSize: 10,
                                                                 color: Colors
                                                                     .black,
                                                               ),
@@ -1203,7 +1193,7 @@ class PlanScreen extends StatelessWidget {
                                                                   '20000',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          29.r,
+                                                                          29,
                                                                       color: Color.fromARGB(
                                                                           176,
                                                                           0,
@@ -1223,7 +1213,7 @@ class PlanScreen extends StatelessWidget {
                                                                   style:
                                                                       TextStyle(
                                                                     fontSize:
-                                                                        16.r,
+                                                                        16,
                                                                     color: Colors
                                                                         .black,
                                                                   ),
@@ -1302,7 +1292,7 @@ class PlanScreen extends StatelessWidget {
                                                                     .white,
                                                                 fontFamily:
                                                                     "Popins",
-                                                                fontSize: 16.r),
+                                                                fontSize: 16),
                                                           ),
                                                         ).marginSymmetric(
                                                             vertical: 20),
@@ -1351,7 +1341,7 @@ class PlanScreen extends StatelessWidget {
                                                   style: TextStyle(
                                                       color: Color.fromARGB(
                                                           187, 0, 0, 0),
-                                                      fontSize: 20.r,
+                                                      fontSize: 20,
                                                       fontFamily: 'Popins',
                                                       fontWeight:
                                                           FontWeight.w700),
@@ -1361,18 +1351,18 @@ class PlanScreen extends StatelessWidget {
                                             Container(
                                               // height: 20,
                                               // width: 20,
-                                              // color: Colors.red,
+                                              // color: Colorsed,
                                               child: Icon(
                                                 Icons.arrow_drop_down_rounded,
                                                 size: 50,
                                               ),
                                             )
                                           ],
-                                        ).paddingOnly(right: 10.r, left: 20.r),
+                                        ).paddingOnly(right: 10, left: 20),
                                       ),
                                       Obx(() => _.photography.value
                                           ? Container(
-                                              height: 500.sh,
+                                              height: 500,
                                               width: Get.width / 2,
                                               child: SingleChildScrollView(
                                                 child: Column(children: [
@@ -1422,7 +1412,7 @@ class PlanScreen extends StatelessWidget {
                                                             'Startup',
                                                             // textAlign: TextAlign.center,
                                                             style: TextStyle(
-                                                                fontSize: 28.r,
+                                                                fontSize: 28,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
@@ -1444,7 +1434,7 @@ class PlanScreen extends StatelessWidget {
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
-                                                                fontSize: 10.r,
+                                                                fontSize: 10,
                                                                 color: Colors
                                                                     .black,
                                                               ),
@@ -1455,7 +1445,7 @@ class PlanScreen extends StatelessWidget {
                                                                   '20000',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          29.r,
+                                                                          29,
                                                                       color: Color.fromARGB(
                                                                           176,
                                                                           0,
@@ -1475,7 +1465,7 @@ class PlanScreen extends StatelessWidget {
                                                                   style:
                                                                       TextStyle(
                                                                     fontSize:
-                                                                        16.r,
+                                                                        16,
                                                                     color: Colors
                                                                         .black,
                                                                   ),
@@ -1554,7 +1544,7 @@ class PlanScreen extends StatelessWidget {
                                                                     .white,
                                                                 fontFamily:
                                                                     "Popins",
-                                                                fontSize: 16.r),
+                                                                fontSize: 16),
                                                           ),
                                                         ).marginSymmetric(
                                                             vertical: 20),
@@ -1607,7 +1597,7 @@ class PlanScreen extends StatelessWidget {
                                                             'Startup',
                                                             // textAlign: TextAlign.center,
                                                             style: TextStyle(
-                                                                fontSize: 28.r,
+                                                                fontSize: 28,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
@@ -1629,7 +1619,7 @@ class PlanScreen extends StatelessWidget {
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
-                                                                fontSize: 10.r,
+                                                                fontSize: 10,
                                                                 color: Colors
                                                                     .black,
                                                               ),
@@ -1640,7 +1630,7 @@ class PlanScreen extends StatelessWidget {
                                                                   '20000',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          29.r,
+                                                                          29,
                                                                       color: Color.fromARGB(
                                                                           176,
                                                                           0,
@@ -1660,7 +1650,7 @@ class PlanScreen extends StatelessWidget {
                                                                   style:
                                                                       TextStyle(
                                                                     fontSize:
-                                                                        16.r,
+                                                                        16,
                                                                     color: Colors
                                                                         .black,
                                                                   ),
@@ -1739,7 +1729,7 @@ class PlanScreen extends StatelessWidget {
                                                                     .white,
                                                                 fontFamily:
                                                                     "Popins",
-                                                                fontSize: 16.r),
+                                                                fontSize: 16),
                                                           ),
                                                         ).marginSymmetric(
                                                             vertical: 20),
@@ -1792,7 +1782,7 @@ class PlanScreen extends StatelessWidget {
                                                             'Startup',
                                                             // textAlign: TextAlign.center,
                                                             style: TextStyle(
-                                                                fontSize: 28.r,
+                                                                fontSize: 28,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .bold,
@@ -1814,7 +1804,7 @@ class PlanScreen extends StatelessWidget {
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
-                                                                fontSize: 10.r,
+                                                                fontSize: 10,
                                                                 color: Colors
                                                                     .black,
                                                               ),
@@ -1825,7 +1815,7 @@ class PlanScreen extends StatelessWidget {
                                                                   '20000',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          29.r,
+                                                                          29,
                                                                       color: Color.fromARGB(
                                                                           176,
                                                                           0,
@@ -1845,7 +1835,7 @@ class PlanScreen extends StatelessWidget {
                                                                   style:
                                                                       TextStyle(
                                                                     fontSize:
-                                                                        16.r,
+                                                                        16,
                                                                     color: Colors
                                                                         .black,
                                                                   ),
@@ -1924,7 +1914,7 @@ class PlanScreen extends StatelessWidget {
                                                                     .white,
                                                                 fontFamily:
                                                                     "Popins",
-                                                                fontSize: 16.r),
+                                                                fontSize: 16),
                                                           ),
                                                         ).marginSymmetric(
                                                             vertical: 20),
@@ -2045,7 +2035,7 @@ class PlanScreen extends StatelessWidget {
                                               'Startup',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -2061,7 +2051,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -2070,7 +2060,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '20000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -2083,7 +2073,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -2156,7 +2146,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -2198,7 +2188,7 @@ class PlanScreen extends StatelessWidget {
                                               'Standard',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -2214,7 +2204,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -2223,7 +2213,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '20000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -2236,7 +2226,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -2309,7 +2299,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -2351,7 +2341,7 @@ class PlanScreen extends StatelessWidget {
                                               'Premium',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -2367,7 +2357,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -2376,7 +2366,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '20000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -2389,7 +2379,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -2463,7 +2453,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -2517,7 +2507,7 @@ class PlanScreen extends StatelessWidget {
                                               'Basic',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -2533,7 +2523,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -2542,7 +2532,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '45,000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -2555,7 +2545,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -2628,7 +2618,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -2670,7 +2660,7 @@ class PlanScreen extends StatelessWidget {
                                               'Standard',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -2686,7 +2676,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -2695,7 +2685,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '75,000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -2708,7 +2698,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -2782,7 +2772,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -2824,7 +2814,7 @@ class PlanScreen extends StatelessWidget {
                                               'Premium',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -2840,7 +2830,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -2849,7 +2839,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '95,000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -2862,7 +2852,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -2936,7 +2926,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -2991,7 +2981,7 @@ class PlanScreen extends StatelessWidget {
                                               'Basic',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -3007,7 +2997,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -3016,7 +3006,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '45,000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -3029,7 +3019,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -3103,7 +3093,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -3145,7 +3135,7 @@ class PlanScreen extends StatelessWidget {
                                               'Standard',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -3161,7 +3151,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -3170,7 +3160,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '85,000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -3183,7 +3173,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -3257,7 +3247,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -3299,7 +3289,7 @@ class PlanScreen extends StatelessWidget {
                                               'Premium',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                  fontSize: 28.r,
+                                                  fontSize: 28,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                   fontFamily: "Popins"),
@@ -3315,7 +3305,7 @@ class PlanScreen extends StatelessWidget {
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
-                                                  fontSize: 10.r,
+                                                  fontSize: 10,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -3324,7 +3314,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     '120,000',
                                                     style: TextStyle(
-                                                        fontSize: 29.r,
+                                                        fontSize: 29,
                                                         color: Color.fromARGB(
                                                             176, 0, 0, 0),
                                                         fontWeight:
@@ -3337,7 +3327,7 @@ class PlanScreen extends StatelessWidget {
                                                   Text(
                                                     'Monthly',
                                                     style: TextStyle(
-                                                      fontSize: 16.r,
+                                                      fontSize: 16,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -3411,7 +3401,7 @@ class PlanScreen extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontFamily: "Popins",
-                                                  fontSize: 16.r),
+                                                  fontSize: 16),
                                             ),
                                           ).paddingOnly(bottom: 10),
                                         ],
@@ -3450,7 +3440,7 @@ class PlanScreen extends StatelessWidget {
                   child: Text(
                     "Not Sure Which Plan is Right For You? Let’s Drop Us A \n Message!",
                     style: TextStyle(
-                        fontSize: 30.r,
+                        fontSize: 30,
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
                         fontFamily: "Popins"),
@@ -3549,7 +3539,7 @@ class PlanScreen extends StatelessWidget {
                     Text(
                       "Our Satisfied Customer",
                       style: TextStyle(
-                          fontSize: 30.r,
+                          fontSize: 30,
                           fontWeight: FontWeight.bold,
                           fontFamily: "Popins"),
                     ),

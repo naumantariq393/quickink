@@ -2170,7 +2170,7 @@ class HomeScreen extends StatelessWidget {
                                 height: Get.height / 2.5,
                                 // color: Colors.white,
                                 child: Image.asset(
-                                  'images/reviews/WaleedDayimMarketing.png',
+                                  'images/reviews/WaleedDayiMarketing.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
