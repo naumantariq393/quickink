@@ -2083,7 +2083,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2236,7 +2236,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2389,7 +2389,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2555,7 +2555,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2708,7 +2708,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2862,7 +2862,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3029,7 +3029,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3183,7 +3183,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3337,7 +3337,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height:Get.height/2.4,
+                                            height: Get.height / 2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3446,12 +3446,12 @@ class PlanScreen extends StatelessWidget {
                         fontFamily: "Popins"),
                     textAlign: TextAlign.center,
                   ).paddingOnly(
-                    top: Get.height / 15,
+                    top: Get.height / 19,
                   ),
                 ),
                 // Centered text widget
                 Positioned(
-                    bottom: Get.height * 0.005,
+                    bottom: Get.height * 0.07,
                     left: Get.width / 2.3 - ((Get.height / 1.5) / 2),
                     child: Row(
                       children: [
@@ -3463,7 +3463,7 @@ class PlanScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10)),
                           width: Get.width / 2.5,
                           // height: Get.height / 2.2,
-                          height: 400,
+                          height: Get.height / 2.5,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
