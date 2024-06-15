@@ -1,13 +1,32 @@
 import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:video_player/video_player.dart';
 
 class HomeController extends GetxController with GetTickerProviderStateMixin {
   final RxDouble containerWidth = 0.0.obs;
-
+  //////////////video/////////////
   RxBool web = false.obs;
   RxBool social = false.obs;
   RxBool photography = false.obs;
+
+  late VideoPlayerController videoController;
+  RxBool isInitialized = false.obs;
+
+  @override
+  Future<void> onReady() async {
+    super.onReady();
+    isInitialized.value = false;
+    update();
+  }
+
+  // @override
+  // void dispose() {
+  //   videoController.dispose();
+  //   super.dispose();
+  // }
+
+////////////home////////////////////////
 
   late AnimationController anime1;
   late AnimationController anime2;
@@ -126,6 +145,13 @@ class HomeController extends GetxController with GetTickerProviderStateMixin {
     ));
 
     anime.forward();
+    isInitialized = true.obs;
+    videoController = VideoPlayerController.networkUrl(
+        Uri.parse('assets/videos/bbqTonight.mp4'))
+      ..initialize().then((_) {
+        videoController.play();
+        videoController.setLooping(true);
+      });
   }
 
   @override

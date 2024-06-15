@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
@@ -18,8 +19,6 @@ class PlanScreen extends StatelessWidget {
     PlanController _ = Get.find<PlanController>();
 
     return CommonScafold(
-      // key: key,
-
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -54,7 +53,7 @@ class PlanScreen extends StatelessWidget {
                                   child: Column(
                                     children: [
                                       Container(
-                                        height: 70,
+                                        height: 70.sh,
                                         width:
                                             Responsive.isMobileContext(context)
                                                 ? Get.width / 1.3
@@ -93,11 +92,11 @@ class PlanScreen extends StatelessWidget {
                                               ),
                                             )
                                           ],
-                                        ).paddingOnly(right: 10, left: 20),
+                                        ).paddingOnly(right: 10.r, left: 20.r),
                                       ),
                                       Obx(() => _.web.value
                                           ? Container(
-                                              height: 500,
+                                              height: 500.sh,
                                               width: Get.width / 2,
                                               child: SingleChildScrollView(
                                                 child: Column(
@@ -272,8 +271,9 @@ class PlanScreen extends StatelessWidget {
                                                             style:
                                                                 ElevatedButton
                                                                     .styleFrom(
-                                                              primary: UIDataColors
-                                                                  .commonColor,
+                                                              backgroundColor:
+                                                                  UIDataColors
+                                                                      .commonColor,
                                                               padding: EdgeInsets
                                                                   .only(
                                                                       top: 23,
@@ -464,8 +464,9 @@ class PlanScreen extends StatelessWidget {
                                                             style:
                                                                 ElevatedButton
                                                                     .styleFrom(
-                                                              primary: UIDataColors
-                                                                  .commonColor,
+                                                              backgroundColor:
+                                                                  UIDataColors
+                                                                      .commonColor,
                                                               padding: EdgeInsets
                                                                   .only(
                                                                       top: 23,
@@ -656,8 +657,9 @@ class PlanScreen extends StatelessWidget {
                                                             style:
                                                                 ElevatedButton
                                                                     .styleFrom(
-                                                              primary: UIDataColors
-                                                                  .commonColor,
+                                                              backgroundColor:
+                                                                  UIDataColors
+                                                                      .commonColor,
                                                               padding: EdgeInsets
                                                                   .only(
                                                                       top: 23,
@@ -741,11 +743,11 @@ class PlanScreen extends StatelessWidget {
                                               ),
                                             )
                                           ],
-                                        ).paddingOnly(right: 10, left: 20),
+                                        ).paddingOnly(right: 10.r, left: 20.r),
                                       ),
                                       Obx(() => _.social.value
                                           ? Container(
-                                              height: 500,
+                                              height: 500.sh,
                                               width: Get.width / 2,
                                               child: SingleChildScrollView(
                                                 child: Column(children: [
@@ -859,7 +861,7 @@ class PlanScreen extends StatelessWidget {
                                                         // SizedBox(height: Get.height * 0.034),
                                                         Container(
                                                           height:
-                                                              Get.height - 430,
+                                                              Get.height / 1.3,
                                                           width: Get.width,
                                                           // color: Colors.amber,
                                                           child:
@@ -909,8 +911,9 @@ class PlanScreen extends StatelessWidget {
                                                           },
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: UIDataColors
-                                                                .commonColor,
+                                                            backgroundColor:
+                                                                UIDataColors
+                                                                    .commonColor,
                                                             padding:
                                                                 EdgeInsets.only(
                                                                     top: 23,
@@ -1042,7 +1045,7 @@ class PlanScreen extends StatelessWidget {
                                                         // SizedBox(height: Get.height * 0.034),
                                                         Container(
                                                           height:
-                                                              Get.height - 430,
+                                                              Get.height / 1.3,
                                                           width: Get.width,
                                                           // color: Colors.amber,
                                                           child:
@@ -1092,8 +1095,9 @@ class PlanScreen extends StatelessWidget {
                                                           },
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: UIDataColors
-                                                                .commonColor,
+                                                            backgroundColor:
+                                                                UIDataColors
+                                                                    .commonColor,
                                                             padding:
                                                                 EdgeInsets.only(
                                                                     top: 23,
@@ -1225,7 +1229,7 @@ class PlanScreen extends StatelessWidget {
                                                         // SizedBox(height: Get.height * 0.034),
                                                         Container(
                                                           height:
-                                                              Get.height - 430,
+                                                              Get.height / 1.3,
                                                           width: Get.width,
                                                           // color: Colors.amber,
                                                           child:
@@ -1275,8 +1279,9 @@ class PlanScreen extends StatelessWidget {
                                                           },
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: UIDataColors
-                                                                .commonColor,
+                                                            backgroundColor:
+                                                                UIDataColors
+                                                                    .commonColor,
                                                             padding:
                                                                 EdgeInsets.only(
                                                                     top: 23,
@@ -1357,11 +1362,11 @@ class PlanScreen extends StatelessWidget {
                                               ),
                                             )
                                           ],
-                                        ).paddingOnly(right: 10, left: 20),
+                                        ).paddingOnly(right: 10.r, left: 20.r),
                                       ),
                                       Obx(() => _.photography.value
                                           ? Container(
-                                              height: 500,
+                                              height: 500.sh,
                                               width: Get.width / 2,
                                               child: SingleChildScrollView(
                                                 child: Column(children: [
@@ -1475,7 +1480,7 @@ class PlanScreen extends StatelessWidget {
                                                         // SizedBox(height: Get.height * 0.034),
                                                         Container(
                                                           height:
-                                                              Get.height - 430,
+                                                              Get.height / 1.3,
                                                           width: Get.width,
                                                           // color: Colors.amber,
                                                           child:
@@ -1525,8 +1530,9 @@ class PlanScreen extends StatelessWidget {
                                                           },
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: UIDataColors
-                                                                .commonColor,
+                                                            backgroundColor:
+                                                                UIDataColors
+                                                                    .commonColor,
                                                             padding:
                                                                 EdgeInsets.only(
                                                                     top: 23,
@@ -1658,7 +1664,7 @@ class PlanScreen extends StatelessWidget {
                                                         // SizedBox(height: Get.height * 0.034),
                                                         Container(
                                                           height:
-                                                              Get.height - 430,
+                                                              Get.height / 1.3,
                                                           width: Get.width,
                                                           // color: Colors.amber,
                                                           child:
@@ -1708,8 +1714,9 @@ class PlanScreen extends StatelessWidget {
                                                           },
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: UIDataColors
-                                                                .commonColor,
+                                                            backgroundColor:
+                                                                UIDataColors
+                                                                    .commonColor,
                                                             padding:
                                                                 EdgeInsets.only(
                                                                     top: 23,
@@ -1841,7 +1848,7 @@ class PlanScreen extends StatelessWidget {
                                                         // SizedBox(height: Get.height * 0.034),
                                                         Container(
                                                           height:
-                                                              Get.height - 430,
+                                                              Get.height / 1.3,
                                                           width: Get.width,
                                                           // color: Colors.amber,
                                                           child:
@@ -1891,8 +1898,9 @@ class PlanScreen extends StatelessWidget {
                                                           },
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: UIDataColors
-                                                                .commonColor,
+                                                            backgroundColor:
+                                                                UIDataColors
+                                                                    .commonColor,
                                                             padding:
                                                                 EdgeInsets.only(
                                                                     top: 23,
@@ -2076,7 +2084,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2127,7 +2135,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -2229,7 +2238,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2280,7 +2289,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -2382,7 +2392,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2434,7 +2444,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -2548,7 +2559,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2599,7 +2610,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -2701,7 +2713,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2753,7 +2765,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -2855,7 +2868,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2907,7 +2920,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -3022,7 +3036,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3074,7 +3088,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -3176,7 +3191,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3228,7 +3243,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,
@@ -3330,7 +3346,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height - 430,
+                                            height: Get.height / 2.1,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3382,7 +3398,8 @@ class PlanScreen extends StatelessWidget {
                                               // Add your button click logic here
                                             },
                                             style: ElevatedButton.styleFrom(
-                                              primary: UIDataColors.commonColor,
+                                              backgroundColor:
+                                                  UIDataColors.commonColor,
                                               padding: EdgeInsets.only(
                                                   top: 23,
                                                   bottom: 23,

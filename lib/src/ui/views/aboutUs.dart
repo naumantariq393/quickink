@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:animated_text_lerp/animated_text_lerp.dart';
@@ -94,7 +95,6 @@ class AboutUs extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                         letterSpacing: 0),
                   ).marginOnly(top: 65),
-
                   Container(
                     height: 500,
                     // color: Colors.red,
@@ -120,7 +120,278 @@ class AboutUs extends StatelessWidget {
                       },
                     ),
                   ).marginOnly(top: 20),
+                  Container(
+                    child: Column(children: [
+                      Text('Our Team',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 35,
+                            fontFamily: 'Popins',
+                            fontWeight: FontWeight.bold,
+                            // color: UIDataColors.whiteColor,
+                          )).paddingSymmetric(vertical: 40),
+                      CarouselSlider(
+                          options: CarouselOptions(
+                            height: Get.height / 2.3,
+                            autoPlay: true,
+                            autoPlayInterval: Duration(seconds: 4),
+                            autoPlayAnimationDuration:
+                                Duration(milliseconds: 1200),
+                            autoPlayCurve: Curves.fastOutSlowIn,
+                            pauseAutoPlayOnTouch: true,
+                            aspectRatio: 1,
+                            viewportFraction:
+                                !Responsive.isMobileContext(context)
+                                    ? Responsive.isTabletContext(context)
+                                        ? 1
+                                        : 1 / 3
+                                    : 1,
+                          ),
+                          items: [
+                            Container(
+                              width: !Responsive.isMobileContext(context)
+                                  ? Responsive.isTabletContext(context)
+                                      ? Get.width
+                                      : Get.width / 2
+                                  : Get.width,
+                              height: Get.height / 2.3,
+                              decoration: BoxDecoration(
+                                border: Border.all(width: .3),
+                              ),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.width
+                                            : Get.width / 4
+                                        : Get.width,
+                                    height: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.height / 4
+                                            : Get.height / 3.7
+                                        : Get.height / 4,
+                                    alignment: Alignment.centerLeft,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(width: .2),
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                          "images/aboutUs/ahsan.jpeg",
+                                        ),
+                                        fit: BoxFit.fitHeight,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Text("Application Developer",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Popins',
+                                        fontWeight: FontWeight.bold,
+                                        // color: UIDataColors.whiteColor,
+                                      )),
+                                  Text(
+                                          "Mr. Ahsan is a professional Hybrid App Developer who has served as a app development at Quick Ink Marketing for the past two years",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Popins',
+                                          ))
+                                      .marginSymmetric(
+                                          vertical: 9, horizontal: 7),
+                                ],
+                              ),
+                            ).marginSymmetric(horizontal: 20),
 
+                            ///
+                            Container(
+                              width: !Responsive.isMobileContext(context)
+                                  ? Responsive.isTabletContext(context)
+                                      ? Get.width
+                                      : Get.width / 4
+                                  : Get.width,
+                              height: Get.height / 60,
+                              decoration: BoxDecoration(
+                                border: Border.all(width: .3),
+                              ),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.width
+                                            : Get.width / 4
+                                        : Get.width,
+                                    height: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.height / 4
+                                            : Get.height / 3.7
+                                        : Get.height / 4,
+                                    alignment: Alignment.centerLeft,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade100,
+                                      border: Border.all(width: .2),
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                          "images/aboutUs/sajid.jpeg",
+                                        ),
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Text("Product Photographer",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Popins',
+                                        fontWeight: FontWeight.bold,
+                                        // color: UIDataColors.whiteColor,
+                                      )),
+                                  Text(
+                                          "Mr. Sajid is a professional product photographer who has served as a product photographer at Quick Ink Marketing for the past three years.",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Popins',
+                                          ))
+                                      .marginSymmetric(
+                                          vertical: 9, horizontal: 7),
+                                ],
+                              ),
+                            ).marginSymmetric(horizontal: 20),
+
+                            ///
+                            Container(
+                              width: !Responsive.isMobileContext(context)
+                                  ? Responsive.isTabletContext(context)
+                                      ? Get.width
+                                      : Get.width / 4
+                                  : Get.width,
+                              decoration: BoxDecoration(
+                                border: Border.all(width: .3),
+                              ),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.width
+                                            : Get.width / 4
+                                        : Get.width,
+                                    height: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.height / 4
+                                            : Get.height / 3.7
+                                        : Get.height / 4,
+                                    alignment: Alignment.centerLeft,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(width: .2),
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                          "images/aboutUs/zohaib.jpeg",
+                                        ),
+                                        fit: BoxFit.fitHeight,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Text("Video Editor",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Popins',
+                                        fontWeight: FontWeight.bold,
+                                        // color: UIDataColors.whiteColor,
+                                      )),
+                                  Text(
+                                          "Mr. Zohaib has served as a video magician at Quick Ink Marketing for the past five years.",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Popins',
+                                          ))
+                                      .marginSymmetric(
+                                          vertical: 9, horizontal: 7),
+                                ],
+                              ),
+                            ).marginSymmetric(horizontal: 20, vertical: 0),
+
+                            ///
+                            Container(
+                              width: !Responsive.isMobileContext(context)
+                                  ? Responsive.isTabletContext(context)
+                                      ? Get.width
+                                      : Get.width / 4
+                                  : Get.width,
+                              height: Get.height / 60,
+                              decoration: BoxDecoration(
+                                border: Border.all(width: .3),
+                              ),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.width
+                                            : Get.width / 4
+                                        : Get.width,
+                                    height: !Responsive.isMobileContext(context)
+                                        ? Responsive.isTabletContext(context)
+                                            ? Get.height / 4
+                                            : Get.height / 3.7
+                                        : Get.height / 4,
+                                    alignment: Alignment.centerLeft,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(width: .2),
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                          "images/aboutUs/abrar.jpeg",
+                                        ),
+                                        fit: BoxFit.fitHeight,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Text("Social Media Marketing Expert",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Popins',
+                                        fontWeight: FontWeight.bold,
+                                        // color: UIDataColors.whiteColor,
+                                      )),
+                                  Text(
+                                          "Seo Expert in Quick Ink Marketing for the past five years.",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Popins',
+                                          ))
+                                      .marginSymmetric(
+                                          vertical: 9, horizontal: 7),
+                                ],
+                              ),
+                            ).marginSymmetric(horizontal: 20),
+
+                            ///
+                          ]).marginSymmetric(horizontal: Get.width * .10),
+
+                      //
+                    ]),
+                  ).paddingSymmetric(vertical: 20, horizontal: 0),
                   Container(
                     width:
                         Responsive.isMobileContext(context) ? Get.width : null,
@@ -294,6 +565,142 @@ class AboutUs extends StatelessWidget {
                 ],
               ).marginSymmetric(
                   horizontal: !Responsive.isDesktopContext(context) ? 50 : 130),
+              Container(
+                width: Get.width,
+                color: UIDataColors.blColor,
+                child: Column(
+                  children: [
+                    Text('What Customers \nsays about our services',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 35,
+                          fontFamily: 'Popins',
+                          fontWeight: FontWeight.bold,
+                          color: UIDataColors.whiteColor,
+                        )).paddingSymmetric(vertical: 20),
+                    CarouselSlider(
+                      options: CarouselOptions(
+                        height: Get.height / 2.5,
+                        // enlargeCenterPage: true,
+                        autoPlay: true,
+                        autoPlayInterval: Duration(seconds: 4),
+                        aspectRatio: 3,
+                        autoPlayAnimationDuration: Duration(milliseconds: 1200),
+                        autoPlayCurve: Curves.fastOutSlowIn,
+                        pauseAutoPlayOnTouch: true,
+                        viewportFraction: !Responsive.isMobileContext(context)
+                            ? Responsive.isTabletContext(context)
+                                ? 1
+                                : 1 / 3
+                            : 1,
+                      ),
+                      items: [
+                        //
+
+                        Container(
+                          width: !Responsive.isMobileContext(context)
+                              ? Responsive.isTabletContext(context)
+                                  ? Get.width
+                                  : Get.width / 4
+                              : Get.width,
+                          height: Get.height / 2.5,
+                          // color: Colors.white,
+                          child: Image.asset(
+                            'images/reviews/AbidHameedBBQTonight.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        Container(
+                          width: !Responsive.isMobileContext(context)
+                              ? Responsive.isTabletContext(context)
+                                  ? Get.width
+                                  : Get.width / 4
+                              : Get.width,
+                          height: Get.height / 2.5,
+                          // color: Colors.white,
+                          child: Image.asset(
+                            'images/reviews/WaleedDayimMarketing.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        Container(
+                          width: !Responsive.isMobileContext(context)
+                              ? Responsive.isTabletContext(context)
+                                  ? Get.width
+                                  : Get.width / 4
+                              : Get.width,
+                          height: Get.height / 2.5,
+                          // color: Colors.white,
+                          child: Image.asset(
+                            'images/reviews/SafariEstate.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+
+                        Container(
+                          width: !Responsive.isMobileContext(context)
+                              ? Responsive.isTabletContext(context)
+                                  ? Get.width
+                                  : Get.width / 4
+                              : Get.width,
+                          height: Get.height / 2.5,
+                          // color: Colors.white,
+                          child: Image.asset(
+                            'images/reviews/KhanEstate.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+
+                        Container(
+                          width: !Responsive.isMobileContext(context)
+                              ? Responsive.isTabletContext(context)
+                                  ? Get.width
+                                  : Get.width / 4
+                              : Get.width,
+                          height: Get.height / 2.5,
+                          // color: Colors.white,
+                          child: Image.asset(
+                            'images/reviews/GlobalFotos.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+
+                        Container(
+                          width: !Responsive.isMobileContext(context)
+                              ? Responsive.isTabletContext(context)
+                                  ? Get.width
+                                  : Get.width / 4
+                              : Get.width,
+                          height: Get.height / 2.5,
+                          // color: Colors.white,
+                          child: Image.asset(
+                            'images/reviews/DaisyDeveloper.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+
+                        Container(
+                          width: !Responsive.isMobileContext(context)
+                              ? Responsive.isTabletContext(context)
+                                  ? Get.width
+                                  : Get.width / 4
+                              : Get.width,
+                          height: Get.height / 2.5,
+                          // color: Colors.white,
+                          child: Image.asset(
+                            'images/reviews/AurgzaibTulip.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Divider(
+                      color: Color.fromARGB(255, 148, 127, 127),
+                      thickness: 1,
+                    ),
+                  ],
+                ).paddingSymmetric(vertical: 40),
+              ),
               FooterWidget()
             ],
           ),

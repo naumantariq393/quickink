@@ -8,8 +8,5 @@ void main() async {
 }
 
 Future<void> initializeServices() async {
-  // await Firebase.initializeApp();
-
-  // SettingsService settings = SettingsService();
-  // Get.putAsync(() => settings.init());
+  
 }

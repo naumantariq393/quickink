@@ -230,6 +230,7 @@ class CommonScafold extends StatelessWidget {
     AppBarController _ = Get.put(AppBarController());
     return Obx(
       () => Scaffold(
+        
         appBar: appbaar
             ? PreferredSize(
                 preferredSize:

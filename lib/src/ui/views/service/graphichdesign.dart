@@ -49,7 +49,7 @@ class GraphicDesign extends StatelessWidget {
                     ),
                   ),
                   Container(
-                          width: Get.width,
+                          width: Get.width / 1.1,
                           child: ResponsiveTextFieldRow(
                             firstTextField: Container(
                               alignment: Responsive.isMobileContext(context)
@@ -85,7 +85,7 @@ class GraphicDesign extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'What Is Graphic Designing?',
+                                              'Graphic Designing',
                                               style: TextStyle(
                                                   fontSize: !Responsive
                                                           .isMobileContext(
@@ -112,6 +112,27 @@ class GraphicDesign extends StatelessWidget {
                                             )
                                           ]),
                                     ),
+                                    Text(
+                                      "What Is Graphic Designing?",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 16
+                                                  : 18
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
                                     Text(
                                       'Graphic design is really important today in our world. Through its informative, conclusive, educational, and entertaining functions, graphic design shapes our perception, facilitates communication, and enriches our visual experience. By understanding and appreciating the various tasks of graphic design, we can harness its full potential to create impactful, memorable, and effective messages in a visually oriented-world.',
                                       style: TextStyle(
@@ -175,48 +196,212 @@ class GraphicDesign extends StatelessWidget {
                                           fontWeight: FontWeight.normal,
                                           decoration: TextDecoration.none),
                                     ).paddingOnly(top: 10, bottom: 10),
-                                    Container(
-                                      alignment:
-                                          Responsive.isMobileContext(context)
-                                              ? Alignment.center
-                                              : Alignment.topLeft,
-                                      width: Responsive.isMobileContext(context)
-                                          ? Get.width / 1.1
-                                          : Get.width / 2.5,
-                                      child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              'What does graphic design do?',
+                                    Text(
+                                      "Where does the graphic designer work?",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 16
+                                                  : 18
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+                                    Text(
+                                      'Graphic designers can work in a variety of environments and sectors. Some of the common places where graphic designers can find employment include:',
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+                                    RichText(
+                                      text: TextSpan(
+                                        text: 'Advertising Agencies. ',
+                                        style: TextStyle(
+                                            color: UIDataColors.blackColor,
+                                            fontSize: !Responsive
+                                                    .isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                            fontFamily: 'Popins',
+                                            height: !Responsive.isMobileContext(
+                                                    context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                            fontWeight: FontWeight.bold,
+                                            decoration: TextDecoration.none),
+                                        children: const <TextSpan>[
+                                          TextSpan(
+                                              text:
+                                                  ' Many graphic designers work in advertising agencies, creating promotional materials, advertisements, campaigns, and designs for clients.',
                                               style: TextStyle(
-                                                  fontSize: !Responsive
-                                                          .isMobileContext(
-                                                              context)
-                                                      ? Responsive
-                                                              .isTabletContext(
-                                                                  context)
-                                                          ? 30
-                                                          : 45
-                                                      : 30,
-                                                  fontWeight: FontWeight.bold,
-                                                  color:
-                                                      UIDataColors.blackColor,
-                                                  decoration:
-                                                      TextDecoration.none),
-                                            ),
-                                            Container(
-                                              width: Get.width / 6,
-                                              child: Divider(
-                                                thickness: 1,
-                                                height: 20,
-                                                color: UIDataColors.blackColor,
-                                              ),
-                                            )
-                                          ]),
+                                                fontWeight: FontWeight.normal,
+                                              )),
+                                        ],
+                                      ),
+                                    ),
+                                    RichText(
+                                      text: TextSpan(
+                                        text: 'Design studios.',
+                                        style: TextStyle(
+                                            color: UIDataColors.blackColor,
+                                            fontSize: !Responsive
+                                                    .isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                            fontFamily: 'Popins',
+                                            height: !Responsive.isMobileContext(
+                                                    context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                            fontWeight: FontWeight.bold,
+                                            decoration: TextDecoration.none),
+                                        children: const <TextSpan>[
+                                          TextSpan(
+                                              text:
+                                                  'Design studios specialize in creating graphic designs for various purposes, such as brand identity design, web design, editorial design, and more.',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.normal,
+                                              )),
+                                        ],
+                                      ),
+                                    ),
+                                    RichText(
+                                      text: TextSpan(
+                                        text:
+                                            'Marketing And Communication Companies. ',
+                                        style: TextStyle(
+                                            color: UIDataColors.blackColor,
+                                            fontSize: !Responsive
+                                                    .isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                            fontFamily: 'Popins',
+                                            height: !Responsive.isMobileContext(
+                                                    context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                            fontWeight: FontWeight.bold,
+                                            decoration: TextDecoration.none),
+                                        children: const <TextSpan>[
+                                          TextSpan(
+                                              text:
+                                                  ' Marketing and communication companies engage graphic designers to develop visual materials for advertising campaigns, communication strategies, and promotion of products or services.',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.normal,
+                                              )),
+                                        ],
+                                      ),
+                                    ),
+                                    RichText(
+                                      text: TextSpan(
+                                        text:
+                                            'Internal Marketing Departments. ',
+                                        style: TextStyle(
+                                            color: UIDataColors.blackColor,
+                                            fontSize: !Responsive
+                                                    .isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                            fontFamily: 'Popins',
+                                            height: !Responsive.isMobileContext(
+                                                    context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                            fontWeight: FontWeight.bold,
+                                            decoration: TextDecoration.none),
+                                        children: const <TextSpan>[
+                                          TextSpan(
+                                              text:
+                                                  ' Many companies have their internal marketing departments, where graphic designers work on developing promotional materials, presentations, packaging design, and other visual elements for the company.',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.normal,
+                                              )),
+                                        ],
+                                      ),
+                                    ),
+                                    RichText(
+                                      text: TextSpan(
+                                        text: 'Editorial Industry.',
+                                        style: TextStyle(
+                                            color: UIDataColors.blackColor,
+                                            fontSize: !Responsive
+                                                    .isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                            fontFamily: 'Popins',
+                                            height: !Responsive.isMobileContext(
+                                                    context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                            fontWeight: FontWeight.bold,
+                                            decoration: TextDecoration.none),
+                                        children: const <TextSpan>[
+                                          TextSpan(
+                                              text:
+                                                  'Graphic designers can work in publishing companies, creating cover designs, illustrations, and layouts for books, magazines, and newspapers.',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.normal,
+                                              )),
+                                        ],
+                                      ),
                                     ),
                                     Text(
-                                      'In addition to its graceful approach, graphic design considers functional and usability aspects. Graphic designers must consider a projects goals, target audience, readability, visual ranking, perceptive navigation, and user experience. Therefore, the design balances form and function to achieve effective and satisfactory results.',
+                                      'If you need a graphic designer expert for your company, business, or projects, please get in touch with our expert team. They will entertain you with creative design and fulfill your requirements as per demand.',
                                       style: TextStyle(
                                           color: UIDataColors.blackColor,
                                           fontSize: !Responsive.isMobileContext(
@@ -235,49 +420,7 @@ class GraphicDesign extends StatelessWidget {
                                               : 1.4,
                                           fontWeight: FontWeight.normal,
                                           decoration: TextDecoration.none),
-                                    ).paddingOnly(top: 0, bottom: 10),
-                                    Text(
-                                      'To carry out their work, graphic designers use various design tools and software, such as Adobe Photoshop, Illustrator, and InDesign. They also use design techniques such as typographic design, composition, color selection, illustration, and photography. With this, they create visual pieces that transmit the desired message in an impactful way.',
-                                      style: TextStyle(
-                                          color: UIDataColors.blackColor,
-                                          fontSize: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 14
-                                                  : 16
-                                              : 14,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 1.4
-                                                  : 1.6
-                                              : 1.4,
-                                          fontWeight: FontWeight.normal,
-                                          decoration: TextDecoration.none),
-                                    ).paddingOnly(top: 0, bottom: 10),
-                                    Text(
-                                      'Corporate communication and marketing are among the disciplines with which it has the most relationship since it captures ideas and messages in many media. For example, in product packaging, corporate websites, or commercial posters. Almost everything is supported by graphic design!',
-                                      style: TextStyle(
-                                          color: UIDataColors.blackColor,
-                                          fontSize: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 14
-                                                  : 16
-                                              : 14,
-                                          height: !Responsive.isMobileContext(
-                                                  context)
-                                              ? Responsive.isTabletContext(
-                                                      context)
-                                                  ? 1.4
-                                                  : 1.6
-                                              : 1.4,
-                                          fontWeight: FontWeight.normal,
-                                          decoration: TextDecoration.none),
-                                    ).paddingOnly(top: 0, bottom: 10),
+                                    ).paddingOnly(top: 10, bottom: 10),
                                   ]),
                             ),
                           ))
@@ -285,7 +428,7 @@ class GraphicDesign extends StatelessWidget {
                           top: 50,
                           bottom: Responsive.isMobileContext(context) ? 30 : 0),
                   SizedBox(
-                    child: Text('Where does the graphic designer work?',
+                    child: Text('Comprehensive Design Services',
                         style: TextStyle(
                             fontSize: !Responsive.isMobileContext(context)
                                 ? Responsive.isTabletContext(context)
@@ -305,7 +448,7 @@ class GraphicDesign extends StatelessWidget {
                         children: [
                           RichText(
                               text: TextSpan(
-                                  text: 'Advertising Agencies: ',
+                                  text: 'Logo Design: ',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -325,7 +468,7 @@ class GraphicDesign extends StatelessWidget {
                                   children: <TextSpan>[
                                 TextSpan(
                                   text:
-                                      ' Many graphic designers work in advertising agencies, creating promotional materials, advertisements, campaigns, and designs for clients',
+                                      ' Craft a memorable and meaningful logo that represents your brand identity.',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -346,7 +489,7 @@ class GraphicDesign extends StatelessWidget {
                               ])).paddingOnly(top: 40),
                           RichText(
                               text: TextSpan(
-                                  text: 'Design studios: ',
+                                  text: 'Branding and Identity: ',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -366,7 +509,7 @@ class GraphicDesign extends StatelessWidget {
                                   children: <TextSpan>[
                                 TextSpan(
                                   text:
-                                      ' Design studios specialize in creating graphic designs for various purposes, such as brand identity design, web design, editorial design, and more.',
+                                      ' Develop a cohesive brand identity with consistent and visually appealing design elements across all platforms.',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -387,8 +530,7 @@ class GraphicDesign extends StatelessWidget {
                               ])).paddingOnly(top: 10),
                           RichText(
                               text: TextSpan(
-                                  text:
-                                      'Marketing And Communication Companies: ',
+                                  text: 'Print Design: ',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -408,7 +550,7 @@ class GraphicDesign extends StatelessWidget {
                                   children: <TextSpan>[
                                 TextSpan(
                                   text:
-                                      ' Marketing and communication companies engage graphic designers to develop visual materials for advertising campaigns, communication strategies, and promotion of products or services.',
+                                      ' Create impactful print materials such as brochures, flyers, posters, and business cards that leave a lasting impression.',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -429,7 +571,7 @@ class GraphicDesign extends StatelessWidget {
                               ])).paddingOnly(top: 10),
                           RichText(
                               text: TextSpan(
-                                  text: 'Internal Marketing Departments: ',
+                                  text: 'Web Graphics: ',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -449,7 +591,7 @@ class GraphicDesign extends StatelessWidget {
                                   children: <TextSpan>[
                                 TextSpan(
                                   text:
-                                      ' Many companies have their internal marketing departments, where graphic designers work on developing promotional materials, presentations, packaging design, and other visual elements for the company.',
+                                      ' Enhance your online presence with visually striking website graphics, banners, and social media visuals.',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -470,7 +612,7 @@ class GraphicDesign extends StatelessWidget {
                               ])).paddingOnly(top: 10),
                           RichText(
                               text: TextSpan(
-                                  text: 'Editorial Industry: ',
+                                  text: 'Packaging Design: ',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(
@@ -490,48 +632,7 @@ class GraphicDesign extends StatelessWidget {
                                   children: <TextSpan>[
                                 TextSpan(
                                   text:
-                                      ' Graphic designers can work in publishing companies, creating cover designs, illustrations, and layouts for books, magazines, and newspapers.',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.normal,
-                                      decoration: TextDecoration.none),
-                                )
-                              ])).paddingOnly(top: 10, bottom: 0),
-                          RichText(
-                              text: TextSpan(
-                                  text: 'Freelance: ',
-                                  style: TextStyle(
-                                      color: UIDataColors.blackColor,
-                                      fontSize: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 14
-                                              : 16
-                                          : 14,
-                                      height: !Responsive.isMobileContext(
-                                              context)
-                                          ? Responsive.isTabletContext(context)
-                                              ? 1.4
-                                              : 1.6
-                                          : 1.4,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none),
-                                  children: <TextSpan>[
-                                TextSpan(
-                                  text:
-                                      ' Many graphic designers work independently as freelancers, offering their services to clients alone and running their own business.',
+                                      ' Elevate the shelf appeal of your products with innovative and attractive packaging designs.',
                                   style: TextStyle(
                                       color: UIDataColors.blackColor,
                                       fontSize: !Responsive.isMobileContext(

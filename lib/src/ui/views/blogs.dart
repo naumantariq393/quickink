@@ -5,7 +5,6 @@ import 'package:quickmarket/src/ui/widgets/footerWidget.dart';
 import 'package:quickmarket/src/ui/widgets/hoverWidget.dart';
 import 'package:quickmarket/src/utils/config/commonscafold.dart';
 import 'package:quickmarket/src/utils/config/responsive.dart';
-import 'package:quickmarket/src/utils/config/widgetresponsive.dart';
 
 import 'package:quickmarket/src/utils/config/uidata.dart';
 
