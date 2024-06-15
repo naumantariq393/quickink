@@ -171,7 +171,7 @@ class PlanScreen extends StatelessWidget {
                                                             mainAxisAlignment:
                                                                 MainAxisAlignment
                                                                     .center,
-                                                            children: [
+                                                            children: const [
                                                               Text(
                                                                 'Rs',
                                                                 style:
@@ -362,7 +362,7 @@ class PlanScreen extends StatelessWidget {
                                                             mainAxisAlignment:
                                                                 MainAxisAlignment
                                                                     .center,
-                                                            children: [
+                                                            children: const [
                                                               Text(
                                                                 'Rs',
                                                                 style:
@@ -553,7 +553,7 @@ class PlanScreen extends StatelessWidget {
                                                             mainAxisAlignment:
                                                                 MainAxisAlignment
                                                                     .center,
-                                                            children: [
+                                                            children: const [
                                                               Text(
                                                                 'Rs',
                                                                 style:
@@ -808,7 +808,7 @@ class PlanScreen extends StatelessWidget {
                                                           mainAxisAlignment:
                                                               MainAxisAlignment
                                                                   .center,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
@@ -993,7 +993,7 @@ class PlanScreen extends StatelessWidget {
                                                           mainAxisAlignment:
                                                               MainAxisAlignment
                                                                   .center,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
@@ -1178,7 +1178,7 @@ class PlanScreen extends StatelessWidget {
                                                           mainAxisAlignment:
                                                               MainAxisAlignment
                                                                   .center,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
@@ -1430,7 +1430,7 @@ class PlanScreen extends StatelessWidget {
                                                           mainAxisAlignment:
                                                               MainAxisAlignment
                                                                   .center,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
@@ -1615,7 +1615,7 @@ class PlanScreen extends StatelessWidget {
                                                           mainAxisAlignment:
                                                               MainAxisAlignment
                                                                   .center,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
@@ -1800,7 +1800,7 @@ class PlanScreen extends StatelessWidget {
                                                           mainAxisAlignment:
                                                               MainAxisAlignment
                                                                   .center,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               'Rs',
                                                               style: TextStyle(
@@ -2047,7 +2047,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -2083,7 +2083,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2200,7 +2200,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -2236,7 +2236,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2353,7 +2353,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -2389,7 +2389,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2519,7 +2519,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -2555,7 +2555,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2672,7 +2672,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -2708,7 +2708,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2826,7 +2826,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -2862,7 +2862,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -2993,7 +2993,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -3029,7 +3029,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3147,7 +3147,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -3183,7 +3183,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3301,7 +3301,7 @@ class PlanScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 'Rs',
                                                 style: TextStyle(
@@ -3337,7 +3337,7 @@ class PlanScreen extends StatelessWidget {
                                           ).marginSymmetric(vertical: 20),
                                           // SizedBox(height: Get.height * 0.034),
                                           Container(
-                                            height: Get.height / 2.1,
+                                            height:Get.height/2.4,
                                             width: Get.width,
                                             // color: Colors.amber,
                                             child: ListView.builder(
@@ -3446,12 +3446,12 @@ class PlanScreen extends StatelessWidget {
                         fontFamily: "Popins"),
                     textAlign: TextAlign.center,
                   ).paddingOnly(
-                    top: Get.height / 7,
+                    top: Get.height / 15,
                   ),
                 ),
                 // Centered text widget
                 Positioned(
-                    bottom: Get.height * 0.04,
+                    bottom: Get.height * 0.005,
                     left: Get.width / 2.3 - ((Get.height / 1.5) / 2),
                     child: Row(
                       children: [
