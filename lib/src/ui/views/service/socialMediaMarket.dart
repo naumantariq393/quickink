@@ -36,6 +36,7 @@ class SocialMediaMarketing extends StatelessWidget {
                                 "images/services/socialmediamarketing/Socail-Media.jpg"),
                             fit: BoxFit.cover)),
                   ),
+                  //ok ahsan here 15 june
                   SizedBox(
                       width: Get.width,
                       child: ResponsiveTextFieldRow(
