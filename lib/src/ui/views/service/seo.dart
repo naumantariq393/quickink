@@ -185,7 +185,7 @@ class SeoService extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ).paddingOnly(bottom: 30),
                               Text(
-                                'Trio Tec Digital is an SEO firm that understands your need and can boost you ranking for particular search terms. Our SEO specialist will review the keywords.',
+                                'Quick Ink Marketing is an SEO firm that understands your need and can boost you ranking for particular search terms. Our SEO specialist will review the keywords.',
                                 style: TextStyle(
                                     color: UIDataColors.blackColor,
                                     fontSize: !Responsive.isMobileContext(
@@ -233,7 +233,7 @@ class SeoService extends StatelessWidget {
                                     decoration: TextDecoration.none),
                               ).paddingOnly(bottom: 30),
                               Text(
-                                'Backlinks are a huge component of ranking higher in search results, but not just any link! That’s why you should partner with an SEO company like Trio Tec Digital.',
+                                'Backlinks are a huge component of ranking higher in search results, but not just any link! That’s why you should partner with an SEO company like Quick Ink Marketing.',
                                 style: TextStyle(
                                     color: UIDataColors.blackColor,
                                     fontSize: !Responsive.isMobileContext(
@@ -334,7 +334,7 @@ class SeoService extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ).paddingOnly(bottom: 30),
                               Text(
-                                'Enhance your online visibility and earn high-quality traffic. At Trio Tec, we ensure our SEO services are aligned with search engines’ best practices to give a boost to your website.',
+                                'Enhance your online visibility and earn high-quality traffic. At Quick Ink Marketing, we ensure our SEO services are aligned with search engines’ best practices to give a boost to your website.',
                                 style: TextStyle(
                                     color: UIDataColors.blackColor,
                                     fontSize: !Responsive.isMobileContext(
@@ -382,7 +382,7 @@ class SeoService extends StatelessWidget {
                                     decoration: TextDecoration.none),
                               ).paddingOnly(bottom: 30),
                               Text(
-                                'We have a team of writers that produce SEO-friendly content for your website. Trio Tec Digital has a team that can write a blog for your website on daily basis.',
+                                'We have a team of writers that produce SEO-friendly content for your website. Quick Ink Marketing has a team that can write a blog for your website on daily basis.',
                                 style: TextStyle(
                                     color: UIDataColors.blackColor,
                                     fontSize: !Responsive.isMobileContext(

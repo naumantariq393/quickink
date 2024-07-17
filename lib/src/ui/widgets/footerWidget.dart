@@ -30,7 +30,7 @@ class FooterWidget extends StatelessWidget {
                         fit: BoxFit.contain,
                         height: 100,
                       ),
-                      Text('We aspire to take our clients to the maximal class of Marvel Nationally & Internationally by strengthening their vision with the most auspicious scenarios, best campaign ideas, and most compelling solutions.',
+                      Text('We aim to elevate our clients to the highest level both nationally and internationally by helping them see the best opportunities, providing great campaign ideas, and offering the most effective solutions.',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -134,7 +134,7 @@ class FooterWidget extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   decoration: TextDecoration.none))
                           .paddingOnly(bottom: 15),
-                      Text('Monday (09:00 Am to 05:00 Pm)',
+                      Text('Monday (10:00 Am to 06:00 Pm)',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -142,7 +142,7 @@ class FooterWidget extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   decoration: TextDecoration.none))
                           .paddingSymmetric(vertical: 5),
-                      Text('Tuesday (09:00 Am to 05:00 Pm)',
+                      Text('Tuesday (10:00 Am to 06:00 Pm)',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -150,7 +150,7 @@ class FooterWidget extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   decoration: TextDecoration.none))
                           .paddingSymmetric(vertical: 5),
-                      Text('Wednesday (09:00 Am to 05:00 Pm)',
+                      Text('Wednesday (10:00 Am to 06:00 Pm)',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -158,7 +158,7 @@ class FooterWidget extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   decoration: TextDecoration.none))
                           .paddingSymmetric(vertical: 5),
-                      Text('Thursday (09:00 Am to 05:00 Pm)',
+                      Text('Thursday (10:00 Am to 06:00 Pm)',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -166,7 +166,7 @@ class FooterWidget extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   decoration: TextDecoration.none))
                           .paddingSymmetric(vertical: 5),
-                      Text('Friday (09:00 Am to 05:00 Pm)',
+                      Text('Friday (10:00 Am to 06:00 Pm)',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -174,7 +174,7 @@ class FooterWidget extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   decoration: TextDecoration.none))
                           .paddingSymmetric(vertical: 5),
-                      Text('Saturday (09:00 Am to 05:00 Pm)',
+                      Text('Saturday (10:00 Am to 06:00 Pm)',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -203,7 +203,7 @@ class FooterWidget extends StatelessWidget {
                                   decoration: TextDecoration.none))
                           .paddingOnly(bottom: 15),
 
-                      Text('601 D, Eden Towers, Main Boulevard Gulberg.',
+                      Text('LG-27 Eden Tower Main  Boulevard Gulberg Lahore',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -212,7 +212,7 @@ class FooterWidget extends StatelessWidget {
                                   decoration: TextDecoration.none))
                           .paddingOnly(bottom: 15),
 
-                      Text('triotecdigital@gmail.com',
+                      Text('info@quickinkmarketing.com',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -221,7 +221,7 @@ class FooterWidget extends StatelessWidget {
                                   decoration: TextDecoration.none))
                           .paddingOnly(bottom: 15),
 
-                      Text('+92 321 1078781',
+                      Text('+92 304 4489813',
                               style: TextStyle(
                                   color: UIDataColors.whiteColor,
                                   fontSize: 16,
@@ -340,7 +340,7 @@ class FooterWidget extends StatelessWidget {
           height: 40,
           color: Color(0xffE61C53),
           child: Text(
-            '© 2020 Trio Tec Digital. All rights reserved.',
+            '© 2020 Quick Ink Marketing. All rights reserved.',
             style: TextStyle(
                 fontSize: 16,
                 color: UIDataColors.whiteColor,

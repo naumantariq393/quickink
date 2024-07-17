@@ -114,7 +114,7 @@ class AppDevelopment extends StatelessWidget {
                                         decoration: TextDecoration.none),
                                   ).paddingOnly(top: 0, bottom: 10),
                                   Text(
-                                    'our mobile app development service, we provide complete and highly effective solutions for mobile platforms such as iOS and Android. Our goal is to deliver seamless and engaging user experiences through intuitive mobile applications. \n \n Our expert team of apps or mobile applications is committed to the design and development of attractive and functional mobile business app solutions that add value to your business and improve access for your end users.',
+                                    'Our mobile app development service, we provide complete and highly effective solutions for mobile platforms such as iOS and Android. Our goal is to deliver seamless and engaging user experiences through intuitive mobile applications. \n \n Our expert team of apps or mobile applications is committed to the design and development of attractive and functional mobile business app solutions that add value to your business and improve access for your end users.',
                                     style: TextStyle(
                                         color: UIDataColors.blackColor,
                                         fontSize:
@@ -271,7 +271,7 @@ class AppDevelopment extends StatelessWidget {
                               decoration: TextDecoration.none),
                         ).paddingOnly(left: 50),
                         Text(
-                          'Quick Ink Marketing is an app development agency in Lahore that helps its clients to grow the business. Trio Tec aids you in launching your app to get into the direct contact with your valuable customers. Quick Ink Marketing App development company in Pakistan will help your brand to flourish and grow like never before.',
+                          'Quick Ink Marketing is an app development agency in Lahore that helps its clients to grow the business. Quick Ink Marketing aids you in launching your app to get into the direct contact with your valuable customers. Quick Ink Marketing App development company in Pakistan will help your brand to flourish and grow like never before.',
                           style: TextStyle(
                               color: UIDataColors.blackColor,
                               fontSize: !Responsive.isMobileContext(context)

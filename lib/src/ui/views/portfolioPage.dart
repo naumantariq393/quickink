@@ -56,7 +56,7 @@ class PortfolioScreen extends StatelessWidget {
                   children: [
                     SizedBox(height: Get.height / 20),
                     Text(
-                      "Our portfolio silhouettes our triumph in our niche. Take a look at our gratified clients for motivation or a round of applause.",
+                      "Our Portfolio Showcases Our Success In Our Field. Check Out Our Happy Clients For Inspiration Or a Pat On The Back.",
                       style: TextStyle(
                           fontSize: 26,
                           color: Colors.black,

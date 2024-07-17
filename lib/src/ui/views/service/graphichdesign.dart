@@ -36,7 +36,7 @@ class GraphicDesign extends StatelessWidget {
                                 "images/services/graphicdesign/innerpage-banner-3.jpg"),
                             fit: BoxFit.cover)),
                     child: Text(
-                      'Graphic Designing',
+                      '',
                       style: TextStyle(
                           fontSize: !Responsive.isMobileContext(context)
                               ? Responsive.isTabletContext(context)
@@ -295,7 +295,7 @@ class GraphicDesign extends StatelessWidget {
                                         children: const <TextSpan>[
                                           TextSpan(
                                               text:
-                                                  'Design studios specialize in creating graphic designs for various purposes, such as brand identity design, web design, editorial design, and more.',
+                                                  ' Design studios specialize in creating graphic designs for various purposes, such as brand identity design, web design, editorial design, and more.',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.normal,
                                               )),
@@ -393,7 +393,7 @@ class GraphicDesign extends StatelessWidget {
                                         children: const <TextSpan>[
                                           TextSpan(
                                               text:
-                                                  'Graphic designers can work in publishing companies, creating cover designs, illustrations, and layouts for books, magazines, and newspapers.',
+                                                  ' Graphic designers can work in publishing companies, creating cover designs, illustrations, and layouts for books, magazines, and newspapers.',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.normal,
                                               )),

@@ -31,7 +31,7 @@ class PlanScreen extends StatelessWidget {
                 children: [
                   SizedBox(height: Get.height / 20),
                   Text(
-                    "Our portfolio silhouettes our triumph in our niche. Take a look at our gratified clients for motivation or a round of applause.",
+                    "Our Portfolio Highlights Our Accomplishments In Our Field. Check Out Our Pleased Clients For Motivation Or Some Well-Deserved Praise.",
                     style: TextStyle(
                         fontSize: 27,
                         fontWeight: FontWeight.w500,
@@ -2032,7 +2032,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Startup',
+                                              'BASIC',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28,
@@ -2058,7 +2058,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '55,000',
                                                     style: TextStyle(
                                                         fontSize: 29,
                                                         color: Color.fromARGB(
@@ -2185,7 +2185,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Standard',
+                                              'STANDARD',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28,
@@ -2211,7 +2211,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '75,000',
                                                     style: TextStyle(
                                                         fontSize: 29,
                                                         color: Color.fromARGB(
@@ -2338,7 +2338,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Premium',
+                                              'PLATINUM',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28,
@@ -2364,7 +2364,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '20000',
+                                                    '1,10,000',
                                                     style: TextStyle(
                                                         fontSize: 29,
                                                         color: Color.fromARGB(
@@ -2530,7 +2530,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '45,000',
+                                                    '35,000',
                                                     style: TextStyle(
                                                         fontSize: 29,
                                                         color: Color.fromARGB(
@@ -2657,7 +2657,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Standard',
+                                              'STANDARD',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28,
@@ -2683,7 +2683,7 @@ class PlanScreen extends StatelessWidget {
                                               Column(
                                                 children: [
                                                   Text(
-                                                    '75,000',
+                                                    '70,000',
                                                     style: TextStyle(
                                                         fontSize: 29,
                                                         color: Color.fromARGB(
@@ -2811,7 +2811,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Premium',
+                                              'PLATINUM',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28,
@@ -3132,7 +3132,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Standard',
+                                              'STANDARD',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28,
@@ -3286,7 +3286,7 @@ class PlanScreen extends StatelessWidget {
                                             color: UIDataColors.commonColor,
                                             alignment: Alignment.center,
                                             child: Text(
-                                              'Premium',
+                                              'PLATINUM',
                                               // textAlign: TextAlign.center,
                                               style: TextStyle(
                                                   fontSize: 28,

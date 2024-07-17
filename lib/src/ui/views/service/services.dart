@@ -35,7 +35,7 @@ class Services extends StatelessWidget {
                             ),
                             fit: BoxFit.cover)),
                     child: Text(
-                      'Our Services',
+                      '',
                       style: TextStyle(
                           fontSize:
                               Responsive.isDesktopContext(context) ? 50 : 35,
@@ -221,7 +221,7 @@ class CreativeMainCntntDms extends StatelessWidget {
                                   ? Get.width / 1.2
                                   : Get.width / 4,
                           child: Text(
-                            'In today’s digital world you can’t speak your petions and information & communication. And Trio Tec Digital has expertise in incarnating the content that bangs on your innovations.',
+                            'In today’s digital world you can’t speak your petition and information & communication. And Quick Ink Marketing has expertise in incarnating the content that bangs on your innovations.',
                             style: TextStyle(
                                 fontSize: 14,
                                 color: UIDataColors.blackColor,
@@ -403,7 +403,7 @@ class CreativeMainCntntDms extends StatelessWidget {
                                   ? Get.width / 1.2
                                   : Get.width / 3,
                           child: Text(
-                            'We work to infuse such an image of your brand that even people can’t help themselves but to love and cherish you. Trio Tec Digital offer is all digital marketing service in Lahore.',
+                            'We work to infuse such an image of your brand that even people can’t help themselves but to love and cherish you. Quick Ink Marketing offer is all digital marketing service in Lahore.',
                             style: TextStyle(
                                 fontSize: 14,
                                 color: UIDataColors.blackColor,
@@ -593,7 +593,7 @@ class MainCntntDms extends StatelessWidget {
                                   ? Get.width / 1.3
                                   : Get.width / 4,
                           child: Text(
-                            'Trio tec digital frame out explicit platforms for you and your clients to talk around and prop up layouts to augment your public relations.',
+                            'Quick Ink Marketing frame out explicit platforms for you and your clients to talk around and prop up layouts to augment your public relations.',
                             style: TextStyle(
                                 fontSize: 14,
                                 color: UIDataColors.blackColor,
@@ -784,7 +784,7 @@ class MainCntntDms extends StatelessWidget {
                                   ? Get.width / 1.3
                                   : Get.width / 4,
                           child: Text(
-                            'We at Trio Tec Digital targets to strengthen your brand’s eminence & giving rise to customer interactions and organic load.',
+                            'We at Quick Ink Marketing targets to strengthen your brand’s eminence & giving rise to customer interactions and organic load.',
                             style: TextStyle(
                                 fontSize: 14,
                                 color: UIDataColors.blackColor,
@@ -963,7 +963,7 @@ class DevelopmentMainCntnt extends StatelessWidget {
                                   ? Get.width / 1.3
                                   : Get.width / 4,
                           child: Text(
-                            'We are master at developing luminous and search engine optimized websites from the scratch that can escalate your brand to the utmost rank. Trio Tec Digital is a website development company in Pakistan.',
+                            'We are master at developing luminous and search engine optimized websites from the scratch that can escalate your brand to the utmost rank. Quick Ink Marketing is a website development company in Pakistan.',
                             style: TextStyle(
                                 fontSize: 14,
                                 color: UIDataColors.blackColor,
@@ -1077,7 +1077,7 @@ class DevelopmentMainCntnt extends StatelessWidget {
                                   ? Get.width / 1.3
                                   : Get.width / 4,
                           child: Text(
-                            'App developing is a style of brand exposure and customer engagement. Our motto is to make your idea proliferate endlessly in every way. Trio Tec Digital is a App development company in Pakistan.',
+                            'Creating apps is a powerful way to amplify your brand presence and foster deep customer engagement. Quick Ink Marketing is a App development company in Pakistan.',
                             style: TextStyle(
                                 fontSize: 14,
                                 color: UIDataColors.blackColor,
@@ -1314,7 +1314,7 @@ class ConsultancyMainCntnt extends StatelessWidget {
                                   ? Get.width / 1.3
                                   : Get.width / 4,
                           child: Text(
-                            'Trio Tec Digital not only design your brand but also refurbish its communication plan. How should your brand articulate? What perception your consumer should have? We are with you in every move.',
+                            'Quick lnk Marketing not only design your brand but also refurbish its communication plan. How should your brand articulate? What perception your consumer should have? We are with you in every move.',
                             style: TextStyle(
                                 fontSize: 14,
                                 color: UIDataColors.blackColor,

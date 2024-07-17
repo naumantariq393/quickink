@@ -151,7 +151,7 @@ class ContactUs extends StatelessWidget {
                                       width: 70,
                                     ).marginOnly(bottom: 10),
                                     Text(
-                                      'I.T. Tower Gulberg III,\n Lahore, Pakistan',
+                                      'LG-27 Eden Tower Main,\n Boulevard Gulberg Lahore',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.white,
@@ -182,7 +182,7 @@ class ContactUs extends StatelessWidget {
                                       width: 70,
                                     ).marginOnly(bottom: 10),
                                     Text(
-                                      '601 D, Eden Towers, Main \n Boulevard Gulberg, Lahore',
+                                      '+92 304 4489813',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontFamily: 'Popins',
@@ -212,7 +212,7 @@ class ContactUs extends StatelessWidget {
                                       width: 70,
                                     ).marginOnly(bottom: 10),
                                     Text(
-                                      '601 D, Eden Towers, Main \n Boulevard Gulberg, Lahore',
+                                      'info@quickinkmarketing.com',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontFamily: 'Popins',
@@ -246,7 +246,7 @@ class ContactUs extends StatelessWidget {
                                   fontFamily: 'Popins'),
                             ).marginOnly(bottom: 20),
                             Text(
-                              ' Have you started a brand and don’t know how to market it felicitously? Do You\n want to portray your running business on the digital world map but have no\n experience of how digital media operates and confused about it? Feeling\n insecure about social media, web development, content creation, online\n marketing techniques and their success? Don’t fear at all! TrioTec Digital is at your\n service even for consultation. Bring your queries to us and we will provide you with\n the most convenient and promising solutions in every aspect.',
+                              ' Have you started a brand and don’t know how to market it felicitously? \n Do You want to portray your running business on the digital world map but have no\n experience of how digital media operates and confused about it?\n Feeling insecure about social media, web development, content creation, online\n marketing techniques and their success? Don’t fear at all! TrioTec Digital is at your\n service even for consultation. Bring your queries to us and we will provide you with\n the most convenient and promising solutions in every aspect.',
                               style: TextStyle(fontWeight: FontWeight.w500),
                             )
                           ],

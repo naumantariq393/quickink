@@ -516,7 +516,7 @@ class HomeScreen extends StatelessWidget {
                                               : 7
                                           : 10),
                                   Text(
-                                    "In today’s digital world you can’t speak your perceptions and words are the solely paramount source of information & communication. And Trio Tec Digital has expertise in incarnating the content that bangs on your innovations",
+                                    "Content Marketing is a way to involve your target audience and grow your network of leads and clients through the creation of relevant and valuable content, attracting, involving and generating value for people and, in this way, creating a perception positive of your brand, generating more business.",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: !Responsive.isMobileContext(
@@ -596,7 +596,7 @@ class HomeScreen extends StatelessWidget {
                                               : 7
                                           : 10),
                                   Text(
-                                    "App developing is a style of brand exposure and customer engagement. Our motto is to make your idea proliferate endlessly in every way.",
+                                    "Mobile application development is the set of knowledge, techniques and processes necessary to create simple software that can be used on mobile devices such as tablets and cell phones. The objective of these applications is to create value for the user, either because of their usefulness or because they create entertainment. Mostly companies create apps to retain their customers.",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: !Responsive.isMobileContext(
@@ -674,7 +674,7 @@ class HomeScreen extends StatelessWidget {
                                               : 7
                                           : 10),
                                   Text(
-                                    "We pledge to boost your profit by our services and intellectually choreographed advertisement schemes and their execution across the web.",
+                                    "PPC  advertising , has become one of the most powerful tools for online advertising. PPC campaigns have radically establish online advertising, helping small businesses reach more people. PPC, is an online advertising tool in which advertisers post ads on a platform such as Google Ads.",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: !Responsive.isMobileContext(
@@ -754,7 +754,7 @@ class HomeScreen extends StatelessWidget {
                                               : 7
                                           : 10),
                                   Text(
-                                    "Wanna rule the loftiest class of your niche? Here we aim at intensifying your cognition’s lucency & bring in organic traffic for you",
+                                    "SEO Positioning (Search Engine Optimization) is a fundamental strategy in the digital world that aims to improve the visibility of a website in the organic search results of engines such as Google, Bing or Yahoo. Why is it so important for your business? Here we explain it to you:",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: !Responsive.isMobileContext(
@@ -832,7 +832,7 @@ class HomeScreen extends StatelessWidget {
                                               : 7
                                           : 10),
                                   Text(
-                                    "Trio Tec Digital endeavors to ameliorate the relations of the brand and its consumers and ensuring their loyalty in person and the social circle as well.",
+                                    "Social media marketing has become an indispensable tool for companies and entrepreneurs looking to increase their visibility, engage with their audience, and ultimately boost their results. We are going to look at some key social media marketing strategies , and give valuable advice so that your brand stands out in today's social media marketing.",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: !Responsive.isMobileContext(
@@ -910,7 +910,7 @@ class HomeScreen extends StatelessWidget {
                                               : 7
                                           : 10),
                                   Text(
-                                    "We are master at developing luminous and search engine optimized websites from the scratch that can escalate your brand to the top.",
+                                    "Web development refers to the process of creating websites and web applications for use on the Internet or an internal network. Web developers use a variety of programming languages ​​and technologies to create websites that are attractive, functional, and easy to use. Web development ranges from creating static web pages to dynamic and complex web applications.",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: !Responsive.isMobileContext(
@@ -959,7 +959,7 @@ class HomeScreen extends StatelessWidget {
                       // color: Colors.red,
                       child: Column(
                         children: [
-                          Text('Why People Talk About Trio Tec Digital?',
+                          Text('Why People Talk About Quick Ink Marketing ?',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 35,
