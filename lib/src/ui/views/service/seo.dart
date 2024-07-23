@@ -95,7 +95,7 @@ class SeoService extends StatelessWidget {
                                           ]),
                                     ),
                                     Text(
-                                      'Your Website is the most powerful tool if your potential customers can find you easily. SEO helps you in optimizing and changing your services on the website. It will allow you to rank among the toppers. Trio Tec Digital SEO services helps you to increase the leads and Sales from your website. Trio Tec digital works on the three crucial parts for your website. Firstly site code and structure, onsite content and offsite factors. Through these 3 pillars Trio Tec digital enables your website to rank among the toppers.',
+                                      'SEO, or search engine optimization, is vital for business aiming to improve visibility in organic search results for relevant keywords. With over 8.5 billion searches daily on Google alone, appearing prominently in search results is essential for meeting customer needs and driving traffic.',
                                       style: TextStyle(
                                           color: UIDataColors.blackColor,
                                           fontSize: !Responsive.isMobileContext(
@@ -115,8 +115,208 @@ class SeoService extends StatelessWidget {
                                           fontWeight: FontWeight.normal,
                                           decoration: TextDecoration.none),
                                     ).paddingOnly(top: 0, bottom: 10),
+
+                                    /////////////////
                                     Text(
-                                      'Your incoming links and external presence affect your SEO performance. We have a proven track record of building campaigns that utilize powerful resources to establish websites for our clients as authorities in their industry. This ensures that each SEO campaign is successful by generating page1 results, driving relevant traffic to key pages. Trio Tec Digital marketing agency provide best SEO services in Pakistan.',
+                                      "Why Choose SEO?",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      "SEO offers long-term returns by ensuring your website ranks organically, reducing dependence on ongoing advertising costs. It's a highly converting traffic source, aligning with existing user needs without the constant spending on ads. This makes SEO a sustainable investment with significant ROI potential over time.",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ),
+
+                                    Text(
+                                      "How SEO Works",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      "SEO comprises two main components: on-page and off-page optimization. On-page SEO involves enhancing website structure, content, and usability to attract both search engines and users. Off-page SEO focuses on building domain strength through quality backlinks from other reputable sites, boosting authority and credibility.",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ),
+
+                                    Text(
+                                      "Our SEO Approach",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      "Quick Ink Marketing, we begin with a thorough analysis of your current digital landscape and goals. We tailor strategies based on detailed keyword research and a comprehensive SEO plan to optimize your site effectively. Our goal is to enhance your Google search rankings and overall digital presence through customized solutions.",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ),
+
+                                    Text(
+                                      "Why SEO Matters",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      "Organic traffic from search engines provides consistent visitor engagement and conversions without continuous ads spend. While we cannot guarantee top search rankings—since these are earned through relevance and quality—our continuous optimization efforts ensure your website is well-positioned for visibility and success. \nPrimarily focusing on Google due to its dominant market share, our SEO specialists can also tailor strategies for other search engines as needed to maximize your online reach and impact.",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.normal,
+                                          decoration: TextDecoration.none),
+                                    ),
+
+                                    Text(
+                                      "Get Started Today",
+                                      style: TextStyle(
+                                          color: UIDataColors.blackColor,
+                                          fontSize: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 14
+                                                  : 16
+                                              : 14,
+                                          height: !Responsive.isMobileContext(
+                                                  context)
+                                              ? Responsive.isTabletContext(
+                                                      context)
+                                                  ? 1.4
+                                                  : 1.6
+                                              : 1.4,
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none),
+                                    ).paddingOnly(top: 0, bottom: 10),
+
+                                    Text(
+                                      "Contact us at Quick Ink Marketing for a personalized consultation and quote. Let us help you unlock your website's full potential with effective SEO strategies tailored to your business objectives.",
                                       style: TextStyle(
                                           color: UIDataColors.blackColor,
                                           fontSize: !Responsive.isMobileContext(

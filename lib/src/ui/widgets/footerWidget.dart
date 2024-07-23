@@ -3,9 +3,21 @@ import 'package:get/get.dart';
 import 'package:quickmarket/src/utils/config/responsive.dart';
 import 'package:quickmarket/src/utils/config/widgetresponsive.dart';
 import '../../utils/config/uidata.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class FooterWidget extends StatelessWidget {
+class FooterWidget extends StatefulWidget {
   const FooterWidget({super.key});
+
+  @override
+  State<FooterWidget> createState() => _FooterWidgetState();
+}
+
+class _FooterWidgetState extends State<FooterWidget> {
+  openUrl(String link) {
+    final Uri url = Uri.parse(link);
+    launchUrl(url);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -296,35 +308,44 @@ class FooterWidget extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Icon(
-                              Icons.inbox,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
+                            IconButton(
+                              onPressed: () {
+                                openUrl(
+                                    'https://www.facebook.com/QInkMarketing');
+                              },
+                              icon: Icon(
+                                Icons.facebook_sharp,
+                                color: Color(0xff316FF6),
+                              ),
                             ),
-                            Icon(
-                              Icons.indeterminate_check_box_sharp,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
+                            IconButton(
+                              onPressed: () {
+                                openUrl('https://twitter.com/QInkMarketing');
+                              },
+                              icon: FaIcon(
+                                FontAwesomeIcons.twitter,
+                                color: Color(0xff1DA1F2),
+                              ),
                             ),
-                            Icon(
-                              Icons.access_alarm,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
+                            IconButton(
+                              onPressed: () {
+                                openUrl(
+                                    'https://www.instagram.com/qinkmarketing/');
+                              },
+                              icon: FaIcon(
+                                FontAwesomeIcons.instagram,
+                                color: Color(0xfffa7e1e),
+                              ),
                             ),
-                            Icon(
-                              Icons.inbox,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                            Icon(
-                              Icons.indeterminate_check_box_sharp,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
-                            ),
-                            Icon(
-                              Icons.access_alarm,
-                              color: UIDataColors.whiteColor,
-                              size: 16,
+                            IconButton(
+                              onPressed: () {
+                                openUrl(
+                                    'https://www.linkedin.com/in/qinkmarketing/');
+                              },
+                              icon: FaIcon(
+                                FontAwesomeIcons.linkedin,
+                                color: Color(0xff0077B5),
+                              ),
                             ),
                           ],
                         ),

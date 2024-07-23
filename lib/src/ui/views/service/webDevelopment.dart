@@ -93,7 +93,7 @@ class WebDevelopmentService extends StatelessWidget {
                                         ]),
                                   ),
                                   Text(
-                                    'There was a time when businesses do not need to get a website because people were not spending too much time on the internet. But as we have hit this decade people have turned to the online world. This online world needs your online presence. If your business has gotten here, then you might think that without a website you have reached until here then you don’t it.',
+                                    "In the past, businesses could thrive without a website, as people weren't broadly using the internet. However, with the current decade, there has been a significant shift towards the online world. Established an online presence has become important. Without website in future business is like earth without oxygen so transfer business on internet is better for business growing in future. Design for the website that will represent the activity on internet. By being present on the internet, you increase your visibility opportunities and your efficiency. Your customers and new prospects must be able to find you and have access to the information they are looking for.",
                                     style: TextStyle(
                                         color: UIDataColors.blackColor,
                                         fontSize:
@@ -113,8 +113,31 @@ class WebDevelopmentService extends StatelessWidget {
                                         fontWeight: FontWeight.normal,
                                         decoration: TextDecoration.none),
                                   ).paddingOnly(top: 20, bottom: 15),
+                                  //////////////
                                   Text(
-                                    'But there is no more essential time to invest in website development services. A website in today’s digital world offers a huge variety of benefits and profits for all types of businesses. Whether you are having a small or a huge business you need to get website development services from a website development agency in Pakistan.',
+                                    "Website Development Company",
+                                    style: TextStyle(
+                                        color: UIDataColors.blackColor,
+                                        fontSize:
+                                            !Responsive.isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                        height:
+                                            !Responsive.isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                        fontWeight: FontWeight.bold,
+                                        decoration: TextDecoration.none),
+                                  ).paddingOnly(top: 0, bottom: 10),
+                                  ///////////
+                                  Text(
+                                    'Quick Ink Marketing stands out as a prominent web development agency in Pakistan. Recognizing that a website is a critical element of your online presence, we are committed to ensuring that our clients do not experience any setbacks. As a website development company based in Lahore, we understand that every piece of information, be it communication, content posting, or details about products, contributes to the overall success. Subsequently, we ensure that the presentation of your products and information on your website is clear and meaningful.',
                                     style: TextStyle(
                                         color: UIDataColors.blackColor,
                                         fontSize:
@@ -135,21 +158,29 @@ class WebDevelopmentService extends StatelessWidget {
                                         decoration: TextDecoration.none),
                                   ),
                                   Text(
-                                    'Website Development Company',
+                                    "Web designing Agency in Pakistan",
                                     style: TextStyle(
                                         color: UIDataColors.blackColor,
                                         fontSize:
                                             !Responsive.isMobileContext(context)
                                                 ? Responsive.isTabletContext(
                                                         context)
-                                                    ? 20
-                                                    : 25
-                                                : 18,
-                                        fontWeight: FontWeight.w900,
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                        height:
+                                            !Responsive.isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                        fontWeight: FontWeight.bold,
                                         decoration: TextDecoration.none),
-                                  ).paddingOnly(top: 30, bottom: 20),
+                                  ).paddingOnly(top: 0, bottom: 10),
+                                  ///////////
                                   Text(
-                                    'If your brand to be famed or your business to be successful in this modern age, you need a responsive web design. Your website is the backbone of your company because it is representing you in the online world. Various web development companies in Pakistan are offering web development services.',
+                                    'Quick Ink Marketing combines innovative technologies and extensive experience to offer you website design, redesign, maintenance and migration services in Pakistan. Independent entrepreneur, SME or Startup, our experts provide you with tailor-made solutions and a complete service of excellence which extends from Web design, project design and management, Web development and digital marketing strategies.',
                                     style: TextStyle(
                                         color: UIDataColors.blackColor,
                                         fontSize:
@@ -168,7 +199,52 @@ class WebDevelopmentService extends StatelessWidget {
                                                 : 1.4,
                                         fontWeight: FontWeight.normal,
                                         decoration: TextDecoration.none),
-                                  ).paddingOnly(bottom: 15),
+                                  ),
+
+                                  Text(
+                                    "Why Business Need Web Development Services?",
+                                    style: TextStyle(
+                                        color: UIDataColors.blackColor,
+                                        fontSize:
+                                            !Responsive.isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                        height:
+                                            !Responsive.isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                        fontWeight: FontWeight.bold,
+                                        decoration: TextDecoration.none),
+                                  ).paddingOnly(top: 0, bottom: 10),
+                                  ///////////
+                                  Text(
+                                    "In today's digital age, businesses must leverage the Internet to its fullest potential. Developing applications or websites is essential for offering products or automating business processes. Web development is crucial for companies because it allows for custom development, where applications or websites are built from scratch for tailored solutions. It also includes the use of CMS applications like WordPress, Wix, and Weebly for easier website creation, as well as Software-as-a-Service (SaaS) platforms like Wix and Shopify for streamlined website management. Regardless of the technology used, a website serves as the main point of contact with clients, acting as a 24/7 sales person. Key considerations in web development include usability and user experience, ensuring intuitive navigation and task completion, as well as security measures such as SSL certificates and protection against hacks. Additionally, performance is crucial, with fast loading times and high availability being essential. Overall, web development is vital for attracting new customers online, automating processes, improving market response, and reducing operational costs.",
+                                    style: TextStyle(
+                                        color: UIDataColors.blackColor,
+                                        fontSize:
+                                            !Responsive.isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 14
+                                                    : 16
+                                                : 14,
+                                        height:
+                                            !Responsive.isMobileContext(context)
+                                                ? Responsive.isTabletContext(
+                                                        context)
+                                                    ? 1.4
+                                                    : 1.6
+                                                : 1.4,
+                                        fontWeight: FontWeight.normal,
+                                        decoration: TextDecoration.none),
+                                  ),
+
                                   Text(
                                     'Trio Tec Digital is a web development agency in Pakistan. We know that website is the main aspect of your online presence and won’t let our clients face any sort of downfall. As a website development company in Lahore, we know that every piece of information whether it is in the form of communication, content posting, or information related to products will pay you back. Each important aspect of web designing services will propel more traffic to your website. We have a team of web developers and we analyze your business type initially. Then we let your products and information presented on your website clear and vivid.',
                                     style: TextStyle(
