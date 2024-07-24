@@ -12,34 +12,96 @@ import '../../utils/config/commonscafold.dart';
 import '../widgets/footerWidget.dart';
 import '../widgets/tab/ReusableTabWithFilterList.dart';
 
-class PortfolioScreen extends StatelessWidget {
+class PortfolioScreen extends StatefulWidget {
   const PortfolioScreen({super.key});
 
   @override
+  State<PortfolioScreen> createState() => _PortfolioScreenState();
+}
+
+class _PortfolioScreenState extends State<PortfolioScreen> {
+  final PortfolioController _ = Get.find<PortfolioController>();
+  final images = [
+    "assets/images/customer1.png",
+    "assets/images/customer2.png",
+    "assets/images/customer3.png",
+    "assets/images/customer4.png",
+    "assets/images/customer5.png",
+    "assets/images/customer6.png",
+    "assets/images/customer7.png",
+    "assets/images/customer8.png",
+  ];
+
+  final names = [
+    "Bar.B.Q",
+    "Daisy Developers",
+    "Dayim Marketing",
+    "Ussion Host",
+    "Safari",
+    "Global Fotos",
+    "The Realtors",
+    "Khan"
+  ];
+
+  final List<String> videoUrls = [
+    'assets/videos/vd0.mp4',
+    'assets/videos/vd1.mp4',
+    'assets/videos/vd2.mp4',
+    'assets/videos/vd3.mp4',
+    'assets/videos/vd4.mp4',
+    'assets/videos/vd5.mp4',
+    'assets/videos/vd6.mp4',
+    'assets/videos/vd7.mp4',
+    'assets/videos/vd8.mp4',
+    'assets/videos/vd9.mp4',
+  ];
+
+  List<VideoPlayerController> _controllers = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _initializeVideoPlayers();
+  }
+
+  void _initializeVideoPlayers() {
+    for (String url in videoUrls) {
+      late VideoPlayerController controller;
+      controller = VideoPlayerController.networkUrl(
+        Uri.parse(url),
+      )..initialize().then((_) {
+          setState(() {
+            controller.play();
+            controller.setLooping(true);
+          });
+        });
+      _controllers.add(controller);
+    }
+  }
+
+  @override
+  void dispose() {
+    for (var controller in _controllers) {
+      controller.dispose();
+    }
+    super.dispose();
+  }
+  // late VideoPlayerController videoController;
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   videoController = VideoPlayerController.networkUrl(
+  //       Uri.parse('assets/videos/bbqTonight.mp4'))
+  //     ..initialize().then((_) {
+  //       videoController.play();
+  //       videoController.setLooping(true);
+  //       print("heekoo video player");
+  //     });
+  //   setState(() {});
+  // }
+
   Widget build(BuildContext context) {
-    PortfolioController _ = Get.find<PortfolioController>();
-    final images = [
-      "assets/images/customer1.png",
-      "assets/images/customer2.png",
-      "assets/images/customer3.png",
-      "assets/images/customer4.png",
-      "assets/images/customer5.png",
-      "assets/images/customer6.png",
-      "assets/images/customer7.png",
-      "assets/images/customer8.png",
-    ];
-
-    final names = [
-      "Bar.B.Q",
-      "Daisy Developers",
-      "Dayim Marketing",
-      "Ussion Host",
-      "Safari",
-      "Global Fotos",
-      "The Realtors",
-      "Khan"
-    ];
-
     return CommonScafold(
       // key: key,
 
@@ -398,7 +460,7 @@ class PortfolioScreen extends StatelessWidget {
                             ],
                           )
                         : Container(
-                            height: Get.height,
+                            height: Get.height / 1.2,
                             child: ReusableTabWithFilterList(
                               tabLength: 3,
                               tabs: [
@@ -458,26 +520,49 @@ class PortfolioScreen extends StatelessWidget {
                                 /////////////////////////////tab1///////////////////////////
 
                                 GridView.builder(
-                                  padding: EdgeInsets.all(35),
-                                  itemCount: 8,
+                                  padding: const EdgeInsets.all(8.0),
                                   gridDelegate:
                                       SliverGridDelegateWithFixedCrossAxisCount(
-                                          crossAxisCount: 3,
-                                          crossAxisSpacing: 30.0,
-                                          mainAxisSpacing: 30.0),
-                                  itemBuilder:
-                                      (BuildContext context, int index) {
-                                    return Container(
-                                      height: 300,
-                                      width: 300,
-                                      child: AspectRatio(
-                                        aspectRatio:
-                                            _.videoController.value.aspectRatio,
-                                        child: VideoPlayer(_.videoController),
-                                      ),
-                                    );
+                                    childAspectRatio: 1.6,
+                                    crossAxisCount: 3,
+                                    crossAxisSpacing: 2.0,
+                                    mainAxisSpacing: 2.0,
+                                  ),
+                                  itemCount: videoUrls.length,
+                                  itemBuilder: (context, index) {
+                                    VideoPlayerController controller =
+                                        _controllers[index];
+                                    return controller.value.isInitialized
+                                        ? AspectRatio(
+                                            aspectRatio:
+                                                controller.value.aspectRatio,
+                                            child: VideoPlayer(controller),
+                                          )
+                                        : Center(
+                                            child: CircularProgressIndicator());
                                   },
                                 ),
+                                // GridView.builder(
+                                //   padding: EdgeInsets.all(35),
+                                //   itemCount: 8,
+                                //   gridDelegate:
+                                //       SliverGridDelegateWithFixedCrossAxisCount(
+                                //           crossAxisCount: 3,
+                                //           crossAxisSpacing: 30.0,
+                                //           mainAxisSpacing: 30.0),
+                                //   itemBuilder:
+                                //       (BuildContext context, int index) {
+                                //     return Container(
+                                //       height: 1000,
+                                //       width: 500,
+                                //       child: AspectRatio(
+                                //         aspectRatio:
+                                //             videoController.value.aspectRatio,
+                                //         child: VideoPlayer(videoController),
+                                //       ),
+                                //     );
+                                //   },
+                                // ),
 
                                 //////////////////////////////tab2///////////////////////////
 

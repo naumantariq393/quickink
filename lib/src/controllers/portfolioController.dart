@@ -16,7 +16,7 @@ class PortfolioController extends GetxController {
         Uri.parse('assets/videos/bbqTonight.mp4'))
       ..initialize().then((_) {
         videoController.play();
-        videoController.setLooping(true);
+        // videoController.setLooping(true);
       });
   }
 

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quickmarket/src/utils/config/responsive.dart';
 import 'package:quickmarket/src/utils/config/uidata.dart';
 import 'package:quickmarket/src/utils/routes/app_routes.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AppBarController extends GetxController {
   RxBool isHovered = false.obs;
@@ -19,6 +21,8 @@ class CommonScafold extends StatelessWidget {
   RxBool isHovered = false.obs;
   var check = false;
   RxBool mobileservicetap = false.obs;
+  String WAwebUrl =
+      'https://api.whatsapp.com/send/?phone=923044489813&text=hi,...';
 
   CommonScafold(
       {super.key,
@@ -191,17 +195,17 @@ class CommonScafold extends StatelessWidget {
                       _.check.value = '';
                     },
                     child: Obx(() => InkWell(
-                      onTap: () {
-                         Get.toNamed(Routes.blogs);
-                      },
-                      child: Text('Blogs',
-                          style: TextStyle(
-                              fontSize: 17,
-                              fontFamily: 'Popins',
-                              color: _.check.value == 'Blogs'
-                                  ? const Color.fromARGB(255, 255, 176, 0)
-                                  : Colors.white)),
-                    ))),
+                          onTap: () {
+                            Get.toNamed(Routes.blogs);
+                          },
+                          child: Text('Blogs',
+                              style: TextStyle(
+                                  fontSize: 17,
+                                  fontFamily: 'Popins',
+                                  color: _.check.value == 'Blogs'
+                                      ? const Color.fromARGB(255, 255, 176, 0)
+                                      : Colors.white)),
+                        ))),
                 MouseRegion(
                     onEnter: (event) {
                       _.check.value = 'Contact';
@@ -230,7 +234,29 @@ class CommonScafold extends StatelessWidget {
     AppBarController _ = Get.put(AppBarController());
     return Obx(
       () => Scaffold(
-        
+        backgroundColor: Colors.white,
+        floatingActionButton: InkWell(
+          child: Container(
+            height: Get.width / 20,
+            width: Get.width / 20,
+            decoration: BoxDecoration(
+                color: Colors.green, borderRadius: BorderRadius.circular(50)),
+            child: Center(
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 3, left: 3),
+                child: FaIcon(
+                  FontAwesomeIcons.whatsapp,
+                  color: Colors.white,
+                  size: 50,
+                ),
+              ),
+            ),
+          ),
+          onTap: () {
+            final Uri url = Uri.parse(WAwebUrl);
+            launchUrl(url);
+          },
+        ),
         appBar: appbaar
             ? PreferredSize(
                 preferredSize:
@@ -253,7 +279,10 @@ class CommonScafold extends StatelessWidget {
                                     gradient: LinearGradient(
                                       begin: Alignment.topLeft,
                                       end: Alignment.bottomRight,
-                                      colors:const [ Color.fromARGB(255, 95, 15, 64),  Color.fromARGB(255, 66, 37, 114)],
+                                      colors: const [
+                                        Color.fromARGB(255, 95, 15, 64),
+                                        Color.fromARGB(255, 66, 37, 114)
+                                      ],
                                       // Optional: Add stops for more control over the gradient distribution
                                       // stops: [0.0, 1.0],
                                     ),
@@ -270,19 +299,22 @@ class CommonScafold extends StatelessWidget {
                             ],
                           )
                         : AppBar(
-                          iconTheme: IconThemeData(color: Colors.white),
+                            iconTheme: IconThemeData(color: Colors.white),
                             backgroundColor: Color.fromARGB(255, 88, 75, 230),
                             flexibleSpace: Container(
                               // width: Get.width,
-                               decoration: BoxDecoration(
-                                    gradient: LinearGradient(
-                                      begin: Alignment.topLeft,
-                                      end: Alignment.bottomRight,
-                                      colors:const [ Color.fromARGB(255, 95, 15, 64),  Color.fromARGB(255, 66, 37, 114)],
-                                      // Optional: Add stops for more control over the gradient distribution
-                                      // stops: [0.0, 1.0],
-                                    ),
-                                  ),
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: const [
+                                    Color.fromARGB(255, 95, 15, 64),
+                                    Color.fromARGB(255, 66, 37, 114)
+                                  ],
+                                  // Optional: Add stops for more control over the gradient distribution
+                                  // stops: [0.0, 1.0],
+                                ),
+                              ),
                               alignment: Alignment.center,
                               // color: Colors.green,
                               child: Image.asset(
@@ -297,7 +329,6 @@ class CommonScafold extends StatelessWidget {
               )
             : null,
         drawer: Drawer(
-          
           backgroundColor: Color.fromARGB(250, 55, 45, 170),
           // backgroundColor: UIDataColors.midBlackColor,
           child: ListView(

@@ -2161,19 +2161,7 @@ class HomeScreen extends StatelessWidget {
                                   fit: BoxFit.cover,
                                 ),
                               ),
-                              Container(
-                                width: !Responsive.isMobileContext(context)
-                                    ? Responsive.isTabletContext(context)
-                                        ? Get.width
-                                        : Get.width / 4
-                                    : Get.width,
-                                height: Get.height / 2.5,
-                                // color: Colors.white,
-                                child: Image.asset(
-                                  'images/reviews/WaleedDayiMarketing.png',
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
+
                               Container(
                                 width: !Responsive.isMobileContext(context)
                                     ? Responsive.isTabletContext(context)
