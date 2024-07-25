@@ -16,8 +16,14 @@ import '../../utils/config/uidata.dart';
 import '../../utils/config/widgetresponsive.dart';
 import '../widgets/tab/ReusableTabWithFilterList.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   final HomeController _ = Get.find<HomeController>();
+
   final images = [
     "assets/images/customer1.png",
     "assets/images/customer2.png",
@@ -29,6 +35,21 @@ class HomeScreen extends StatelessWidget {
     "assets/images/customer8.png",
   ];
 
+  final List<String> videoUrls = [
+    'assets/videos/vd0.mp4',
+    'assets/videos/vd1.mp4',
+    'assets/videos/vd2.mp4',
+    'assets/videos/vd3.mp4',
+    'assets/videos/vd4.mp4',
+    'assets/videos/vd5.mp4',
+    'assets/videos/vd6.mp4',
+    'assets/videos/vd7.mp4',
+    'assets/videos/vd8.mp4',
+    'assets/videos/vd9.mp4',
+  ];
+
+  List<VideoPlayerController> _controllers = [];
+
   final names = [
     "Bar.B.Q",
     "Daisy Developers",
@@ -39,6 +60,36 @@ class HomeScreen extends StatelessWidget {
     "The Realtors",
     "Khan"
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    _initializeVideoPlayers();
+  }
+
+  void _initializeVideoPlayers() {
+    for (String url in videoUrls) {
+      late VideoPlayerController controller;
+      controller = VideoPlayerController.networkUrl(
+        Uri.parse(url),
+      )..initialize().then((_) {
+          setState(() {
+            controller.play();
+            controller.setLooping(true);
+          });
+        });
+      _controllers.add(controller);
+    }
+  }
+
+  @override
+  void dispose() {
+    for (var controller in _controllers) {
+      controller.dispose();
+    }
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return CommonScafold(
@@ -1625,28 +1676,41 @@ class HomeScreen extends StatelessWidget {
                                     tabBarView: [
                                       /////////////////////////////tab1///////////////////////////
 
-                                      GridView.builder(
-                                        padding: EdgeInsets.all(35),
-                                        itemCount: 8,
-                                        gridDelegate:
-                                            SliverGridDelegateWithFixedCrossAxisCount(
+                                      _controllers[2].value.isInitialized
+                                          ? GridView.builder(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              gridDelegate:
+                                                  SliverGridDelegateWithFixedCrossAxisCount(
+                                                childAspectRatio: 1.6,
                                                 crossAxisCount: 3,
-                                                crossAxisSpacing: 30.0,
-                                                mainAxisSpacing: 30.0),
-                                        itemBuilder:
-                                            (BuildContext context, int index) {
-                                          return Container(
-                                            height: 300,
-                                            width: 300,
-                                            child: AspectRatio(
-                                              aspectRatio: _.videoController
-                                                  .value.aspectRatio,
-                                              child: VideoPlayer(
-                                                  _.videoController),
-                                            ),
-                                          );
-                                        },
-                                      ),
+                                                crossAxisSpacing: 2.0,
+                                                mainAxisSpacing: 2.0,
+                                              ),
+                                              itemCount: videoUrls.length,
+                                              itemBuilder: (context, index) {
+                                                VideoPlayerController
+                                                    controller =
+                                                    _controllers[index];
+                                                return controller
+                                                        .value.isInitialized
+                                                    ? AspectRatio(
+                                                        aspectRatio: controller
+                                                            .value.aspectRatio,
+                                                        child: VideoPlayer(
+                                                            controller),
+                                                      )
+                                                    : Center(
+                                                        child:
+                                                            CircularProgressIndicator());
+                                              },
+                                            )
+                                          : Center(
+                                              child: Text("Comming Soon...",
+                                                  style: TextStyle(
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.w600))),
 
                                       //////////////////////////////tab2///////////////////////////
 

@@ -13,8 +13,6 @@ import '../widgets/footerWidget.dart';
 import '../widgets/tab/ReusableTabWithFilterList.dart';
 
 class PortfolioScreen extends StatefulWidget {
-  const PortfolioScreen({super.key});
-
   @override
   State<PortfolioScreen> createState() => _PortfolioScreenState();
 }
@@ -79,13 +77,7 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
     }
   }
 
-  @override
-  void dispose() {
-    for (var controller in _controllers) {
-      controller.dispose();
-    }
-    super.dispose();
-  }
+
   // late VideoPlayerController videoController;
 
   // @override
